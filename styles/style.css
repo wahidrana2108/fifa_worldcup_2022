@@ -1,0 +1,5 @@
+.activePage{
+    font-weight: bolder;
+    background-color: #d3d3d3;
+    pointer-events: none;
+}

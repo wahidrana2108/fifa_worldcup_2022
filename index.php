@@ -4,11 +4,9 @@
 ?>
 
 <?php
-    $active='Home';
     include("includes/implement.php");
 ?>
 
 <?php
-    $active='Home';
     include("includes/footer.php");
 ?>

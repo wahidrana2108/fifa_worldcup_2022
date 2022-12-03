@@ -4,7 +4,7 @@
 ?>
 
 <?php
-    include("includes/implement.php");
+    include("includes/sponsors.php");
 ?>
 
 <?php

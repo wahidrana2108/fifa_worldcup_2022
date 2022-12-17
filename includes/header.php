@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="includes/schedule-style.css" />
     <script src="https://kit.fontawesome.com/fedd93fc11.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,14 +26,14 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item <?php if($active=='Live Score') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="index.php">Live Score</a></li>
-                        <li class="nav-item <?php if($active=='') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Players</a></li>
-                        <li class="nav-item <?php if($active=='') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Teams</a></li>
+                        <li class="nav-item <?php if($active=='Live Score') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Live Score</a></li>
+                        <li class="nav-item <?php if($active=='Players') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="players.php">Players</a></li>
+                        <li class="nav-item <?php if($active=='Teams') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="team.php">Teams</a></li>
                         <li class="nav-item <?php if($active=='') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Rankings</a></li>
                         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schedule</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Match By Date</a></li>
-                                <li><a class="dropdown-item" href="#">Match By Group</a></li>
+                                <li><a class="dropdown-item" href="schedule.php#match-date">Match By Date</a></li>
+                                <li><a class="dropdown-item" href="schedule.php#match-group">Match By Group</a></li>
                             </ul>
                         </li>
                     </ul>

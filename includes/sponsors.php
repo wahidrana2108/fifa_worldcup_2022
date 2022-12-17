@@ -51,12 +51,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/adidas"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -107,12 +101,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/coca-cola"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -159,12 +147,6 @@
                                             five-star hotel owner in
                                             the world. </span></p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/wanda-group"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -217,12 +199,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/hundai-kia-motors"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -270,12 +246,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/qatar-airways"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -289,19 +259,19 @@
                         <div class="figure_ffFigure__g_yyR ">
                             <picture class="figure_picture__C_3Z_ ">
                                 <source media="(min-width: 1400px)"
-                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:416&amp;quality=100">
+                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:416&quality=100">
                                 <source media="(min-width: 1200px)"
-                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:356&amp;quality=100">
+                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:356&quality=100">
                                 <source media="(min-width: 992px)"
-                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:296&amp;quality=100">
+                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:296&quality=100">
                                 <source media="(min-width: 768px)"
-                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:336&amp;quality=100">
+                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:336&quality=100">
                                 <source media="(min-width: 576px)"
-                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:516&amp;quality=60">
+                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:516&quality=60">
                                 <source media="(min-width: 320px)"
-                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:552&amp;quality=60">
+                                    srcset="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:552&quality=60">
                                 <img class="figure_picture__C_3Z_ " decoding="async" loading="lazy"
-                                    src="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:50&amp;quality=30"
+                                    src="https://digitalhub.fifa.com/transform/6e1aa203-e39b-4074-901d-8ddd503a47c2/QatarEnergy?io=transform:fill,aspectratio:4x3,width:50&quality=30"
                                     alt="Qatar Energy" title="Qatar Energy" width="100%" height="100%">
                             </picture>
                         </div>
@@ -322,12 +292,6 @@
                                             the energy transition in the State of Qatar and beyond.</span>
                                     </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/qatar-energy"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -379,12 +343,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ff-story-card_links__Tvfx7">
-                            <div class="row ff-mb-8">
-                                <div class="col"><a href="/about-fifa/commercial/partners/visa"><span
-                                            class="ff-mr-16 ff-story-card_link__Se7eL ">Read More</span></a></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -401,7 +359,7 @@
             <div class="row gx-0 justify-content-center ff-logostrip_logos__D_dEh">
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.adidas.co.uk/football" class="d-flex ff-mb-0" target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="57" width="114"
                                     src="https://digitalhub.fifa.com/transform/f8b15d10-2085-44dd-9874-82222d941b6b/Vector-Adidas-new-logo?io=transform:fill,height:57,width:114"
@@ -410,7 +368,7 @@
                 </div>
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.coca-cola.com/" class="d-flex ff-mb-0" target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="57" width="114"
                                     src="https://cloudinary.fifa.com/m/7b71c2f3185bddfb/original/fwc2022_fp_cocacola-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57"
@@ -419,7 +377,7 @@
                 </div>
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.wanda-group.com/" class="d-flex ff-mb-0" target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="57" width="114"
                                     src="https://cloudinary.fifa.com/m/7ecf457666d9fb6c/original/fwc2022_fp_dalian-wanda-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57"
@@ -428,18 +386,16 @@
                 </div>
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.fifa.com/about-fifa/commercial/partners/hundai-kia-motors"
-                            class="d-flex ff-mb-0" target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="57" width="114"
                                     src="https://cloudinary.fifa.com/m/6954f7d3fd116343/webimage-fwc2022_fp_hyundai-kia-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57"
                                     alt="Hyundai" title="Hyundai" class="image_img__JuDY4"></div>
                         </a></div>
                 </div>
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.qatarairways.com/en-dk/homepage.html" class="d-flex ff-mb-0"
-                            target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="57" width="114"
                                     src="https://cloudinary.fifa.com/m/6d3a4cc8e08eeb0f/webimage-fwc2022_fp_qatar-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57"
@@ -448,7 +404,7 @@
                 </div>
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.qatarenergy.qa" class="d-flex ff-mb-0" target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="57" width="114"
                                     src="https://digitalhub.fifa.com/transform/aebad5a8-a4ff-467a-81d2-ab34c4843fbe/Vector-Qatar-Energy-logo?io=transform:fill,height:57,width:114"
@@ -457,7 +413,7 @@
                 </div>
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
                     <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="https://www.visa.com/" class="d-flex ff-mb-0" target="_blank">
+                            href="#" class="d-flex ff-mb-0" target="_blank">
                             <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
                                     loading="lazy" height="71" width="94"
                                     src="https://digitalhub.fifa.com/transform/fdae2bc1-3678-4471-955d-20e4870b924f/visa_94x71?io=transform:fill,height:71,width:94"

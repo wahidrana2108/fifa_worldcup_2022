@@ -1,5 +1,5 @@
     <!-- footer start-->
-    <div class="container bg-secondary">
+    <div class="bg-secondary">
         <div class="row justify-content-center m-3">
             <div class="col-md-3 p-3 m-3 bg-light">
                 <div class="ps-5">
@@ -29,6 +29,29 @@
                     <h6 class="text-secondary">+09696000123456</h6>
                     <h6 class="text-secondary">Physical Location</h6>
                 </div>
+                <hr>
+                <h4>User Section</h4>
+                <ul>
+                    <li>
+                        <?php
+                            if(!isset($_SESSION['customer_email'])){
+                                echo "<a href='.php' class='nav-link'>Login</a>";
+                            }
+                            else{
+                                echo "<a href='customer/myAccount.php' class='nav-link'>My Account</a>";
+                            }
+                        ?>
+                    </li>
+                    <li>
+                        <?php                           
+                           if(!isset($_SESSION['customer_email'])){                      
+                                echo "<a href='customer/customer_register.php' class='nav-link'>Register</a>";
+                                }else{
+                                echo " <a href='logout.php' class='nav-link'>Log Out</a> ";
+                                }                          
+                         ?>
+                    </li>
+                </ul>
             </div>
         </div>
         <footer class="text-light text-center"><i class="fa-regular fa-copyright"></i> <small>FIFA World Cup 2022</small>

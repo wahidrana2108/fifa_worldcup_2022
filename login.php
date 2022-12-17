@@ -1,10 +1,10 @@
 <?php
-    $active='Schedule';
+    $active='Live Score';
     include("includes/header.php");
 ?>
-
 <?php
-    include("includes/schedule.php");
+    $active='Live Score';
+    include("includes/login.php");
 ?>
 
 <?php

@@ -1,5 +1,4 @@
-body{
-}
+
 
 .activePage{
     font-weight: bolder;
@@ -7,6 +6,10 @@ body{
     pointer-events: none;
 }
 
+
+.tempNavBg {
+    background-color: rgb(165, 165, 165);
+}
 
 
 

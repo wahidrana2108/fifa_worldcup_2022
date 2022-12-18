@@ -14,4 +14,15 @@ function getRealIpUser(){
 }
 
 
+function dp(){
+    global $db;
+    $get_users = "select * from customers";
+    $run_users = mysqli_query($db,$get_users);
+    while($row_users=mysqli_fetch_array($run_users)){
+        $customer_image = $row_users['customer_image'];
+    }
+    echo"$customer_image";
+}
+
+
 ?>

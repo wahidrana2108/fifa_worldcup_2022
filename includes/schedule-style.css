@@ -1,12 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --bg: rgb(227, 232, 255);
+    --card-bg: rgb(244, 245, 247);
+    --white: #fff;
+    --shadow: rgba(235, 240, 250, 0.731);
+    --text-dark: rgb(5, 29, 49);
+    --badge-text: #343483;
+    --btn-bg: rgb(82, 84, 221);
+    --scrollbar-bg: rgb(250, 248, 255);
+}
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #d3d3d3;
+    font-size: 1.6rem;
 }
 
 ::-webkit-scrollbar {

@@ -5,5 +5,8 @@
 
 
 <?php
+    include("includes/implement.php");
+?>
+<?php
     include("includes/footer.php");
 ?>

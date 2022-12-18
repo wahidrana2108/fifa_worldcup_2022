@@ -26,6 +26,7 @@
         $check_customer = mysqli_num_rows($run_customer);          
 
 
+
         if($check_customer==0){    
             echo "<script>alert('Your email or password is wrong!')</script>";      
             exit();   

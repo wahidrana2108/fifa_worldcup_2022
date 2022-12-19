@@ -135,4 +135,56 @@ function playerCategory(){
 }
 
 
+function teamCountry(){
+    global $db;
+
+    $get_con = "select * from country";
+    $run_con = mysqli_query($db,$get_con);
+    $row_con = mysqli_fetch_array($run_con);
+    $con_id = $row_con['con_id'];
+    $con_title = $row_con['con_name'];
+
+
+
+    $get_player = "select * from player where con_id='$con_id'";
+    $run_player = mysqli_query($db,$get_player);
+    
+    
+    while($row_player=mysqli_fetch_array($run_player)){
+        $p_id = $row_player['player_id'];
+        $p_name = $row_player['player_name'];
+        $p_age = $row_player['player_age'];
+        $p_rating = $row_player['player_rating'];
+        $p_img = $row_player['player_img'];
+
+
+        $get_cat = "select * from category where cat_id='$p_id'";
+        $run_cat = mysqli_query($db,$get_cat);
+        $row_cat = mysqli_fetch_array($run_cat);
+        $cat_title = $row_cat['cat_title'];
+
+
+        
+        echo "
+        <div class='col'>
+            <div class='card h-100'>
+                <a href='details.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
+                <div class='card-body'>
+                    <h5 class='card-title text-center fw-bolder'>$p_name</h5>
+                    <h6 class='card-title text-center fw-bolder'>Position: $cat_title</h6>
+                    <h6 class='card-title text-center fw-bolder'>Age: $p_age</h6>
+                    <h6 class='card-title text-center fw-bolder'>Country: $con_title</h6>
+                    <h6 class='card-title text-center fw-bolder'>Rating: $p_rating/10</h6>
+                </div>
+            </div>
+        </div>
+        ";
+    }
+
+
+
+
+}
+
+
 ?>

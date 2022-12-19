@@ -74,7 +74,7 @@
 
         $p_img = $_FILES['p_img']['name'];
 
-        $temp_name = $_FILES['p_img']['temp_name'];
+        $temp_name = $_FILES['p_img']['tmp_name'];
 
         move_uploaded_file($temp_name,"admin_area/player_img/$p_img");
 

@@ -44,7 +44,7 @@
                 <ul class="navbar-nav mb-2 ms-auto mb-lg-0">                            
                         <?php 
                         if(!isset($_SESSION['customer_email'])){
-                            echo "<li class='nav-item dropdown'><a class='nav-link active text-light' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'><img src='customer_images/user.jpg' id='dp' alt=''></a>";
+                            echo "<li class='nav-item dropdown'><a class='nav-link active text-light' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'><img src='customer_images/user.png' id='dp' alt=''></a>";
                         }
                         else{
                             $customer_session = $_SESSION['customer_email'];

@@ -26,7 +26,7 @@
             <div class="col-md-10">
                 <?php
                     if(!isset($_GET['p_cat'])){
-                        if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
                             echo "<h4 class='text-center text-light fw-bolder pb-3'>Player Information</h4>";
                         }
                     }
@@ -38,10 +38,9 @@
                     ?>
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
                     <?php 
-                        genderCategory();
-                        productCategory();
+                        playerCategory();
                     ?>
                 </div>
 

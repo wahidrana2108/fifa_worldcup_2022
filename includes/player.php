@@ -1,6 +1,4 @@
 <!-- player card start-->
-
-<!-- player card end-->
 <?php
     if(!isset($_GET['p_cat'])){
         if(!isset($_GET['cat'])){
@@ -28,16 +26,28 @@
                 $p_rating = $row_player['player_rating'];
                 $p_img = $row_player['player_img'];
 
+
+                $get_con = "select * from country where con_id='$p_con'";
+                $run_con = mysqli_query($db,$get_con);
+                $row_con = mysqli_fetch_array($run_con);
+                $con_title = $row_con['con_name'];
+
+
+                $get_pose = "select * from category where cat_id='$p_cat'";
+                $run_pose = mysqli_query($db,$get_pose);
+                $row_pose = mysqli_fetch_array($run_pose);
+                $pose_title = $row_pose['cat_title'];
+                
                 echo "
                 <div class='col'>
                     <div class='card h-100'>
                         <a href='details.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
                         <div class='card-body'>
                             <h5 class='card-title text-center fw-bolder'>$p_name</h5>
-                            <h6 class='card-title text-center fw-bolder'>Position: $p_cat</h6>
+                            <h6 class='card-title text-center fw-bolder'>Position: $pose_title</h6>
                             <h6 class='card-title text-center fw-bolder'>Age: $p_age</h6>
-                            <h6 class='card-title text-center fw-bolder'>Country: $p_con</h6>
-                            <h6 class='card-title text-center fw-bolder'>Rank: $p_rating/10</h6>
+                            <h6 class='card-title text-center fw-bolder'>Country: $con_title</h6>
+                            <h6 class='card-title text-center fw-bolder'>Rating: $p_rating/10</h6>
                         </div>
                     </div>
                 </div>
@@ -46,3 +56,4 @@
         }
     }
 ?>
+<!-- player card end-->

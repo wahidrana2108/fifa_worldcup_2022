@@ -24,7 +24,7 @@ function getCat(){
 
         echo "
         <li class='nav-item'>
-            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='shop.php?p_cat=$cat_id'>$cat_title</a>
+            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='players.php?cat=$cat_id'>$cat_title</a>
         </li>
         ";
 
@@ -44,7 +44,7 @@ function getPCat(){
 
         echo "
         <li class='nav-item'>
-            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='shop.php?p_cat=$cat_id'>$cat_title</a>
+            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='players.php?p_cat=$cat_id'>$cat_title</a>
         </li>
         ";
 
@@ -55,7 +55,7 @@ function getPCat(){
 function button(){
     global $db;
     
-    $per_page=6;
+    $per_page=15;
 
     $query = "select * from player";
     $result = mysqli_query($db,$query);
@@ -72,116 +72,67 @@ function button(){
 }
 
 
-function genderCategory(){
+function playerCategory(){
     global $db;
     if(isset($_GET['cat'])){
         $cat_id = $_GET['cat'];
-        $get_cat = "select * from categories where cat_id='$cat_id'";
+        $get_cat = "select * from category where cat_id='$cat_id'";
         $run_cat = mysqli_query($db,$get_cat);
         $row_cat = mysqli_fetch_array($run_cat);
         $cat_title = $row_cat['cat_title'];
-        $cat_desc = $row_cat['cat_desc'];
         
-        $get_cats = "select * from products where cat_id='$cat_id'";
-        $run_products = mysqli_query($db,$get_cats);
-        $count = mysqli_num_rows($run_products);
+        
+        $get_cats = "select * from player where cat_id='$cat_id'";
+        $run_player = mysqli_query($db,$get_cats);
+        $count = mysqli_num_rows($run_player);
         if($count==0){
             echo "
             <div class='sDetails'>
-                <h1>$cat_title</h1>
-                <p>No product Found In This category. </p>
+                <h3 class='text-center'>$cat_title</h3>
+                <p class='text-center'>No Player Found In This category. </p>
             </div>
             ";
         }
         else{
             echo "
                 <div class='sDetails'>
-                    <h1>$cat_title</h1>
-                    <p>$cat_desc</p>
+                    <h3 class='text-center'>$cat_title</h3>
                 </div>
             ";
         }
-        while($row_products=mysqli_fetch_array($run_products)){
-            $pro_id = $row_products['product_id'];
-            $pro_title = $row_products['product_title'];
-            $pro_price = $row_products['product_price'];
-            $pro_img1 = $row_products['product_img1'];
-    
+        while($row_player=mysqli_fetch_array($run_player)){
+            $p_id = $row_player['player_id'];
+            $p_name = $row_player['player_name'];
+            $p_age = $row_player['player_age'];
+            $p_con = $row_player['con_id'];
+            $p_rating = $row_player['player_rating'];
+            $p_img = $row_player['player_img'];
+
+
+            $get_con = "select * from country where con_id='$p_con'";
+            $run_con = mysqli_query($db,$get_con);
+            $row_con = mysqli_fetch_array($run_con);
+            $con_title = $row_con['con_name'];
+
+
+            
             echo "
-                <div class='col remove'>
-                    <div class='card'>
-                        <a href='details.php?pro_id=$pro_id'>
-                            <img src='admin_area/product_images/$pro_img1' class='card-img-top'>
-                        </a>
-                        <div class='card-body'>
-                            <h5 class='card-title fw-bolder text-primary'> $pro_title </a></h5>
-                            <h6 class='card-text'><a href='details.php?pro_id=$pro_id'><span class='fw-bolder'>৳</span> $pro_price</a></h6>
-                            <button class='btn btn-secondary btn-sm mb-1 removeBtn'><a href='details.php?pro_id=$pro_id'><i class='fa-solid fa-circle-info me-1'></i>Details</a></button>
-                            <button class='btn btn-success btn-sm removeBtn'><a href='details.php?pro_id=$pro_id'><i class='fa-solid fa-cart-arrow-down me-1'> </i> Add to Cart</a></button>
-                        </div>
+            <div class='col'>
+                <div class='card h-100'>
+                    <a href='details.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
+                    <div class='card-body'>
+                        <h5 class='card-title text-center fw-bolder'>$p_name</h5>
+                        <h6 class='card-title text-center fw-bolder'>Position: $cat_title</h6>
+                        <h6 class='card-title text-center fw-bolder'>Age: $p_age</h6>
+                        <h6 class='card-title text-center fw-bolder'>Country: $con_title</h6>
+                        <h6 class='card-title text-center fw-bolder'>Rating: $p_rating/10</h6>
                     </div>
                 </div>
+            </div>
             ";
         }
     }   
 }
-
-
-function productCategory(){
-    global $db;
-    if(isset($_GET['p_cat'])){
-        $p_cat_id = $_GET['p_cat'];
-        $get_p_cat = "select * from products_categories where p_cat_id='$p_cat_id'";
-        $run_p_cat = mysqli_query($db,$get_p_cat);
-        $row_p_cat = mysqli_fetch_array($run_p_cat);
-        $p_cat_title = $row_p_cat['p_cat_title'];
-        $p_cat_desc = $row_p_cat['p_cat_desc'];
-        $get_products = "select * from products where p_cat_id='$p_cat_id'";
-        $run_products = mysqli_query($db,$get_products);
-        $count = mysqli_num_rows($run_products);
-        if($count==0){
-            echo "
-            <div class='sDetails'>
-                <h1>$p_cat_title</h1>
-                <p>No product Found In This category. </p>
-            </div>
-            ";
-        }
-        else{
-            echo "
-                <div class='sDetails'>
-                    <h1>$p_cat_title</h1>
-                    <p>$p_cat_desc </p>
-                </div>
-            ";
-        }
-        
-        while($row_products=mysqli_fetch_array($run_products)){
-            $pro_id = $row_products['product_id'];
-            $pro_title = $row_products['product_title'];
-            $pro_price = $row_products['product_price'];
-            $pro_img1 = $row_products['product_img1'];
-    
-            echo "
-                <div class='col remove'>
-                    <div class='card'>
-                        <a href='details.php?pro_id=$pro_id'>
-                            <img src='admin_area/product_images/$pro_img1' class='card-img-top'>
-                        </a>
-                        <div class='card-body'>
-                            <h5 class='card-title fw-bolder text-primary'> $pro_title </a></h5>
-                            <h6 class='card-text'><a href='details.php?pro_id=$pro_id'><span class='fw-bolder'>৳</span> $pro_price</a></h6>
-                            <button class='btn btn-secondary btn-sm mb-1 removeBtn'><a href='details.php?pro_id=$pro_id'><i class='fa-solid fa-circle-info me-1'></i>Details</a></button>
-                            <button class='btn btn-success btn-sm removeBtn'><a href='details.php?pro_id=$pro_id'><i class='fa-solid fa-cart-arrow-down me-1'> </i> Add to Cart</a></button>
-                        </div>
-                    </div>
-                </div>
-            ";
-        }
-    }
-    
-}
-
 
 
 ?>

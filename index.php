@@ -5,7 +5,7 @@
 
 
 <?php
-    include("includes/implement.php");
+    include("admin_area/player_entry.php");
 ?>
 <?php
     include("includes/footer.php");

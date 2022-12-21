@@ -77,6 +77,71 @@
     </div>
     <!-- index content end -->
 
+
+
+    
+    <!-- best trip with owl carousel start -->
+    <div class="container mt-5 mb-5">
+    <h3 class="text-center text-light">Our Latest Blogs</h3>
+
+    <div class="mt-3">
+        <div class="owl-carousel owl-theme">
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- best trip with owl carousel end -->
+
+
+
 <?php
     include("includes/footer.php");
 ?>

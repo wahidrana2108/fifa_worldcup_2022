@@ -76,7 +76,7 @@
             loop: true,
             nav: false,
             autoplay: true,
-            autoplayTimeout: 2000,
+            autoplayTimeout: 3000,
             margin: 10,
             responsive: {
                 0: {

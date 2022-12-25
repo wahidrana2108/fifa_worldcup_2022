@@ -147,7 +147,7 @@
     </div>
     <!-- index content end -->
     
-    <!-- best trip with owl carousel start -->
+    <!-- Our latest blogs with owl carousel start -->
     <div class="container mt-5 mb-5">
     <h3 class="text-center text-light">Our Latest Blogs</h3>
 
@@ -198,11 +198,11 @@
         </div>
     </div>
     </div>
-    <!-- best trip with owl carousel end -->
+    <!-- Our latest blogs with owl carousel end -->
     
-    <!-- best trip with owl carousel start -->
+    <!-- Our latest news with owl carousel start -->
     <div class="container mt-5 mb-5">
-    <h3 class="text-center text-light">Our Latest Blogs</h3>
+    <h3 class="text-center text-light">Our Latest News</h3>
 
     <div class="mt-3">
         <div class="owl-carousel owl-theme">
@@ -258,7 +258,7 @@
         </div>
     </div>
     </div>
-    <!-- best trip with owl carousel end -->
+    <!-- Our latest news with owl carousel end -->
 
     <!-- FIFA partners start -->
     <div class="container-fluid">

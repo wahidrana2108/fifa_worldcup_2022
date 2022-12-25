@@ -3,8 +3,15 @@
     include("includes/header.php");
 ?>
 
+
     <!-- sponsors start -->
-    <div class="container mt-4 text-light">
+    <div class="container mt-3 text-light">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-light" aria-current="page"><h6><i class="fa-solid fa-home ps-2 pt-2"></i> <a class="text-decoration-none text-light" href="index.php">Home</a></h6></li>
+                <li class="breadcrumb-item text-light active" aria-current="page"><i class="fa-solid fa-handshake pt-2"></i> Sponsors</li>
+            </ol>
+        </nav>
         <section>
             <div class="row">
                 <div class="col-12">

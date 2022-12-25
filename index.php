@@ -78,6 +78,78 @@
     <!-- index content end -->
 
 
+    <!-- index content end -->
+    <div class="card border-dark mt-5 col-md-8 m-auto">
+        <h5 class="card-header text-center text-light"  style="background-color: rgb(48, 48, 48);"><i class="fa-solid fa-chart-simple pe-3"></i>Team Statistics</h5>
+        <div class="card-body bg-dark justify-content-between">
+            <table class="table table-borderless table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center"><img src="https://world-cup.codsfli.com/flag/ARG.png" height="40px"></th>
+                        <th class="text-center"></th>
+                        <th class="text-center" ><img src="https://world-cup.codsfli.com/flag/BRA.png" height="40px"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Shot</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Shot on target</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Possession of the ball</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Pass</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Statistics fot correct/incorrect passes</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Foul</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Yellow card</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Red card</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Offside</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+                    <tr class='clickable-row'>
+                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">Corner</th>
+                        <th class="text-center  text-light" >0</th>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- index content end -->
+
+
 
     
     <!-- best trip with owl carousel start -->
@@ -139,6 +211,147 @@
     </div>
     </div>
     <!-- best trip with owl carousel end -->
+
+    
+    <!-- best trip with owl carousel start -->
+    <div class="container mt-5 mb-5">
+    <h3 class="text-center text-light">Our Latest Blogs</h3>
+
+    <div class="mt-3">
+        <div class="owl-carousel owl-theme">
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- best trip with owl carousel end -->
+
+
+
+
+    <!-- FIFA partners start -->
+    <div class="container-fluid ff-logostrip_logostripsContainer__Nspzb text-light mb-5">
+        <div class="d-flex flex-column align-content-center ff-logostrip_logostrip__PNqBi">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h6 class=" ff-text-blue-cinema d-block mx-auto text-center fw-bolder mt-5">FIFA Partners</h6>
+                </div>
+            </div>
+            <div class="row gx-0 justify-content-center ff-logostrip_logos__D_dEh">
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="57" width="114"
+                                    src="https://digitalhub.fifa.com/transform/f8b15d10-2085-44dd-9874-82222d941b6b/Vector-Adidas-new-logo?io=transform:fill,height:57,width:114"
+                                    alt="Adidas" title="Adidas" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="57" width="114"
+                                    src="https://cloudinary.fifa.com/m/7b71c2f3185bddfb/original/fwc2022_fp_cocacola-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57"
+                                    alt="Coca Cola" title="Coca Cola" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="57" width="114"
+                                    src="https://cloudinary.fifa.com/m/7ecf457666d9fb6c/original/fwc2022_fp_dalian-wanda-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57"
+                                    alt="Wanda group" title="Wanda group" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="57" width="114"
+                                    src="https://cloudinary.fifa.com/m/6954f7d3fd116343/webimage-fwc2022_fp_hyundai-kia-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57"
+                                    alt="Hyundai" title="Hyundai" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="57" width="114"
+                                    src="https://cloudinary.fifa.com/m/6d3a4cc8e08eeb0f/webimage-fwc2022_fp_qatar-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57"
+                                    alt="Qatar Airways" title="Qatar Airways" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="57" width="114"
+                                    src="https://digitalhub.fifa.com/transform/aebad5a8-a4ff-467a-81d2-ab34c4843fbe/Vector-Qatar-Energy-logo?io=transform:fill,height:57,width:114"
+                                    alt="Qatar Energy" title="Qatar Energy" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
+                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
+                            href="#" class="d-flex ff-mb-0" target="_blank">
+                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
+                                    loading="lazy" height="71" width="94"
+                                    src="https://digitalhub.fifa.com/transform/fdae2bc1-3678-4471-955d-20e4870b924f/visa_94x71?io=transform:fill,height:71,width:94"
+                                    alt="VISA" title="VISA" class="image_img__JuDY4"></div>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIFA partners end -->
 
 
 

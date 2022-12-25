@@ -62,7 +62,7 @@
 
     <!-- side navbar end -->
     <div class="col-md-2">
-        <ul class="navbar-nav navbar-dark bg-dark mb-2 ps-3">
+        <ul class="navbar-nav navbar-dark bg-dark ps-3 vh-100">
             <li class="nav-item <?php if($active=='Live Score') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="#">Dashboard</a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                 <ul class="dropdown-menu">

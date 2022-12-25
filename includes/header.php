@@ -31,7 +31,7 @@
                     <li class="nav-item <?php if($active=='Live Score') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Live Score</a></li>
                     <li class="nav-item <?php if($active=='Players') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="players.php">Players</a></li>
                     <li class="nav-item <?php if($active=='Teams') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="team.php">Teams</a></li>
-                    <li class="nav-item <?php if($active=='Rankings') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Rankings</a></li>
+                    <li class="nav-item <?php if($active=='Rankings') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="sponsors.php">Sponsors</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schedule</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="schedule.php#match-date">Match By Date</a></li>

@@ -4,11 +4,56 @@
 ?>
 
 
+<!-- product start -->
+<div id="content" class="mt-3">
+    <div class="container">
+        <div class="col-md-12">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+            </ul>
+        </div>
 
 
-<?php
-    include("includes/team.php");
-?>
+        <div class="d-flex">
+            <div class="col-md-2 me-1">
+                <?php
+                    include("includes/sidebar.php");
+                ?>
+
+            </div>
+
+            <div class="col-md-10">
+                <?php
+                    if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
+                            echo "<h4 class='text-center text-light fw-bolder'>Team Information</h4>";
+                        }
+                    }
+                ?>
+                
+                <div class="col-md-12">
+                    <?php
+                        include("includes/team.php");
+                    ?>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
+                    <?php 
+                        playerCategory();
+                    ?>
+                </div>
+
+
+                
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- product end -->
+
 <?php
     include("includes/footer.php");
 ?>

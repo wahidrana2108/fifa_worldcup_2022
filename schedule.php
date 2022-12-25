@@ -48,47 +48,6 @@
 </head>
 
 <body>
-    <!-- temp nav start -->
-        <div class="d-flex tempNavBg row">
-            <div class="welcome mt-auto col-sm-12 col-md-7">
-                <h6 class="text-center"> 
-                    <a class="btn btn-success btn-sm justify-content-left">
-                        <?php 
-                            if(!isset($_SESSION['customer_email'])){                       
-                                echo "Welcome: Guest";                      
-                            }else{                        
-                                echo "Welcome: " . $_SESSION['customer_email'] . "";                       
-                            }                   
-                        ?>
-                    </a>
-            </div>
-            <div class="col-sm-12 col-md-5" >
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <?php
-                            if(!isset($_SESSION['customer_email'])){
-                                echo "<a href='checkout.php' class='nav-link'>My Account</a>";
-                            }
-                            else{
-                                echo "<a href='customer/myAccount.php' class='nav-link'>My Account</a>";
-                            }
-                        ?>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="cart.php">Go To Cart</a></li>
-                    <li class="nav-item">
-                        <?php                           
-                           if(!isset($_SESSION['customer_email'])){                      
-                                echo "<a href='checkout.php' class='nav-link'> Login </a>";
-                                }else{
-                                echo " <a href='logout.php' class='nav-link'> Log Out </a> ";
-                                }                          
-                         ?>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    <!-- temp nav end -->
-
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">

@@ -28,10 +28,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item <?php if($active=='Live Score') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Live Score</a></li>
+                    <li class="nav-item <?php if($active=='Home') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="index.php">Home</a></li>
                     <li class="nav-item <?php if($active=='Players') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="players.php">Players</a></li>
                     <li class="nav-item <?php if($active=='Teams') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="team.php">Teams</a></li>
-                    <li class="nav-item <?php if($active=='Rankings') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="sponsors.php">Sponsors</a></li>
+                    <li class="nav-item <?php if($active=='Rankings') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="rankings.php">Rankings</a></li>
+                    <li class="nav-item <?php if($active=='Sponsors') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="sponsors.php">Sponsors</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schedule</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="schedule.php#match-date">Match By Date</a></li>

@@ -1,13 +1,13 @@
 <?php
-    $active='Live Score';
+    $active='Home';
     include("includes/header.php");
 ?>
     <!-- carousel end -->
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+    <div id="banner" class="carousel slide carousel-fade" data-bs-ride="true">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <?php 
@@ -17,18 +17,16 @@
                     $slide_name = $row_slides['slide_name'];
                     $slide_image = $row_slides['slide_image'];                              
                     echo "                               
-                    <div class='carousel-item active'>
-                        <img src='admin_area/banner_img/$slide_image' class='d-block w-100' style='height: 550px;'>
-                    </div>
+                    <div class='carousel-item active'> <img src='admin_area/banner_img/$slide_image' class='d-block w-100' style='height: 550px;'></div>
                 ";
             }
             ?>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -148,9 +146,59 @@
         </div>
     </div>
     <!-- index content end -->
+    
+    <!-- best trip with owl carousel start -->
+    <div class="container mt-5 mb-5">
+    <h3 class="text-center text-light">Our Latest Blogs</h3>
 
-
-
+    <div class="mt-3">
+        <div class="owl-carousel owl-theme">
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="..."> 
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        <div class='item'>
+            <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
+            </div>
+            <h3 class="text-light">Thank you</h3>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- best trip with owl carousel end -->
     
     <!-- best trip with owl carousel start -->
     <div class="container mt-5 mb-5">
@@ -211,149 +259,41 @@
     </div>
     </div>
     <!-- best trip with owl carousel end -->
-
-    
-    <!-- best trip with owl carousel start -->
-    <div class="container mt-5 mb-5">
-    <h3 class="text-center text-light">Our Latest Blogs</h3>
-
-    <div class="mt-3">
-        <div class="owl-carousel owl-theme">
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        </div>
-    </div>
-    </div>
-    <!-- best trip with owl carousel end -->
-
-
-
 
     <!-- FIFA partners start -->
-    <div class="container-fluid ff-logostrip_logostripsContainer__Nspzb text-light mb-5">
-        <div class="d-flex flex-column align-content-center ff-logostrip_logostrip__PNqBi">
+    <div class="container-fluid">
+        <div class="d-flex flex-column align-content-center">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <h6 class=" ff-text-blue-cinema d-block mx-auto text-center fw-bolder mt-5">FIFA Partners</h6>
+                    <h6 class="d-block mx-auto text-center fw-bolder mt-5">FIFA Partners</h6>
                 </div>
             </div>
-            <div class="row gx-0 justify-content-center ff-logostrip_logos__D_dEh">
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="57" width="114"
-                                    src="https://digitalhub.fifa.com/transform/f8b15d10-2085-44dd-9874-82222d941b6b/Vector-Adidas-new-logo?io=transform:fill,height:57,width:114"
-                                    alt="Adidas" title="Adidas" class="image_img__JuDY4"></div>
-                        </a></div>
-                </div>
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="57" width="114"
-                                    src="https://cloudinary.fifa.com/m/7b71c2f3185bddfb/original/fwc2022_fp_cocacola-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57"
-                                    alt="Coca Cola" title="Coca Cola" class="image_img__JuDY4"></div>
-                        </a></div>
-                </div>
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="57" width="114"
-                                    src="https://cloudinary.fifa.com/m/7ecf457666d9fb6c/original/fwc2022_fp_dalian-wanda-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57"
-                                    alt="Wanda group" title="Wanda group" class="image_img__JuDY4"></div>
-                        </a></div>
-                </div>
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="57" width="114"
-                                    src="https://cloudinary.fifa.com/m/6954f7d3fd116343/webimage-fwc2022_fp_hyundai-kia-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57"
-                                    alt="Hyundai" title="Hyundai" class="image_img__JuDY4"></div>
-                        </a></div>
+            <div class="row  justify-content-center">
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <a href="#" class="d-flex ff-mb-0" target="_blank"> <div><img decoding="async" loading="lazy" height="57" width="114" src="https://digitalhub.fifa.com/transform/f8b15d10-2085-44dd-9874-82222d941b6b/Vector-Adidas-new-logo?io=transform:fill,height:57,width:114" alt="Adidas" title="Adidas"></div></a>
                 </div>
                 <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="57" width="114"
-                                    src="https://cloudinary.fifa.com/m/6d3a4cc8e08eeb0f/webimage-fwc2022_fp_qatar-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57"
-                                    alt="Qatar Airways" title="Qatar Airways" class="image_img__JuDY4"></div>
-                        </a></div>
+                    <a href="#" class="d-flex ff-mb-0" target="_blank"> <div><img decoding="async" loading="lazy" height="57" width="114" src="https://cloudinary.fifa.com/m/7b71c2f3185bddfb/original/fwc2022_fp_cocacola-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57" alt="Coca Cola" title="Coca Cola"></div></a>
                 </div>
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="57" width="114"
-                                    src="https://digitalhub.fifa.com/transform/aebad5a8-a4ff-467a-81d2-ab34c4843fbe/Vector-Qatar-Energy-logo?io=transform:fill,height:57,width:114"
-                                    alt="Qatar Energy" title="Qatar Energy" class="image_img__JuDY4"></div>
-                        </a></div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <a href="#" class="d-flex ff-mb-0" target="_blank"><img decoding="async" loading="lazy" height="57" width="114" src="https://cloudinary.fifa.com/m/7ecf457666d9fb6c/original/fwc2022_fp_dalian-wanda-co_lbgr.eps?tx=c_fill,x_57,y_28,g_xy_center,q_auto,w_114,h_57" alt="Wanda group" title="Wanda group"> </a>
                 </div>
-                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center ff-logostrip_logo__y4oJK">
-                    <div class="ff-logostrip_logoContainer__mbAsg ff-logostrip_partnerTier-fifaPartner__5Ojit"><a
-                            href="#" class="d-flex ff-mb-0" target="_blank">
-                            <div class="image_figureImage__Uyz8N ff-logostrip_logo__y4oJK"><img decoding="async"
-                                    loading="lazy" height="71" width="94"
-                                    src="https://digitalhub.fifa.com/transform/fdae2bc1-3678-4471-955d-20e4870b924f/visa_94x71?io=transform:fill,height:71,width:94"
-                                    alt="VISA" title="VISA" class="image_img__JuDY4"></div>
-                        </a></div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <a href="#" class="d-flex ff-mb-0" target="_blank"><img decoding="async" loading="lazy" height="57" width="114" src="https://cloudinary.fifa.com/m/6954f7d3fd116343/webimage-fwc2022_fp_hyundai-kia-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57" alt="Hyundai" title="Hyundai"></a>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <div><a href="#" class="d-flex ff-mb-0" target="_blank"><img decoding="async" loading="lazy" height="57" width="114" src="https://cloudinary.fifa.com/m/6d3a4cc8e08eeb0f/webimage-fwc2022_fp_qatar-co_lbgr.png?tx=c_fill,g_auto,q_auto,w_114,h_57" alt="Qatar Airways" title="Qatar Airways"></a></div>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <a href="#" class="d-flex ff-mb-0" target="_blank"><img decoding="async" loading="lazy" height="57" width="114" src="https://digitalhub.fifa.com/transform/aebad5a8-a4ff-467a-81d2-ab34c4843fbe/Vector-Qatar-Energy-logo?io=transform:fill,height:57,width:114" alt="Qatar Energy" title="Qatar Energy"></a>
+                </div>
+                <div class="col-12 col-lg-3 col-xxl-auto d-flex justify-content-center">
+                    <a href="#" class="d-flex ff-mb-0" target="_blank"><img decoding="async" loading="lazy" height="71" width="94" src="https://digitalhub.fifa.com/transform/fdae2bc1-3678-4471-955d-20e4870b924f/visa_94x71?io=transform:fill,height:71,width:94" alt="VISA" title="VISA"></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- FIFA partners end -->
-
-
 
 <?php
     include("includes/footer.php");

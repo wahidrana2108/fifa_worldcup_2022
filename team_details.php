@@ -20,36 +20,37 @@
         <div class="d-flex">
             <div class="col-md-2 me-1">
                 <?php
-                    include("includes/sidebar.php");
+                    include("includes/sidebarCon.php");
                 ?>
 
             </div>
 
             <div class="col-md-10">
+
                 <?php
-                    if(!isset($_GET['cat'])){
+                    if(isset($_GET['con_id'])){
+                        $country_id = $_GET['con_id'];
+                        $get_con = "select * from country where con_id='$country_id'";
+                        $run_con = mysqli_query($con,$get_con);
+                        $row_con = mysqli_fetch_array($run_con);
+                        $con_title = $row_con['con_name'];
+
                         if(!isset($_GET['cat'])){
-                            echo "<h4 class='text-center text-light fw-bolder mb-5'>Team Players</h4>";
+                            echo "<h4 class='text-center text-light fw-bolder mb-5'>All players from $con_title</h4>";
                         }
+                        else{
+                            echo "<h4 class='text-center text-light fw-bolder mb-5'>category from $con_title</h4>";
+                        }
+                        
                     }
                 ?>
+                                 
                 
                 <div class="col-md-12">
                 
                     <div class="row row-cols-1 row-cols-md-5 g-4">
                         
-                        <?php
-                            if(isset($_GET['con_id'])){
-                                $country_id = $_GET['con_id'];
-                                $get_player = "select * from player where con_id='$country_id'";
-                                $run_player = mysqli_query($con,$get_player);
-                                while($row_player = mysqli_fetch_array($run_player)){
-                                    $player_id = $row_player['player_id'];
-                                    $player_name = $row_player['player_name'];
-                                    echo $player_name;
-                                }
-                            }
-                        ?>
+                       <?php include("includes/team_details.php")?>
 
 
                     </div>
@@ -57,7 +58,7 @@
 
                 <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
                     <?php 
-                        playerCategory();
+                        playerCountryCategory();
                     ?>
                 </div>
 

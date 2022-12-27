@@ -5,41 +5,5 @@
     <script src="https://kit.fontawesome.com/fedd93fc11.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- scripts end-->
-
-    <!-- own carousel js start -->
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            margin: 10,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                960: {
-                    items: 4
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        });
-        owl.on('mousewheel', '.owl-stage', function (e) {
-            if (e.deltaY > 0) {
-                owl.trigger('next.owl');
-            } else {
-                owl.trigger('prev.owl');
-            }
-            e.preventDefault();
-        });
-    </script>
-<!-- own carousel js end -->
-
 </body>
 </html>

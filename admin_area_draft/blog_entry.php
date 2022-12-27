@@ -50,12 +50,9 @@
                 <label for="">Preferred Position</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="p_height" type="number" min="0" max="210" step="1" pattern="^[-/d]/d*$" class="form-control" id="" placeholder="Enter Height" required>
-                <label for="">Enter Height</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input name="p_rating" type="number" min="0" max="10" step="1" pattern="^[-/d]/d*$" class="form-control" id="" placeholder="Enter Rating" required>
-                <label for="">Enter Points</label>
+                <input name="p_rating" type="number" min="0" max="10" step="1" pattern="^[-/d]/d*$" class="form-control" id="" placeholder="Enter Rating"
+                    required>
+                <label for="">Enter Rating</label>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label text-light">Player Photo</label>
@@ -73,21 +70,22 @@
         $p_age = $_POST['p_age'];
         $p_con = $_POST['p_con'];
         $p_cat = $_POST['p_cat'];
-        $p_height = $_POST['p_height'];
         $p_rating = $_POST['p_rating'];
 
         $p_img = $_FILES['p_img']['name'];
 
         $temp_name = $_FILES['p_img']['tmp_name'];
 
-        move_uploaded_file($temp_name,"player_img/$p_img");
+        move_uploaded_file($temp_name,"admin_area/player_img/$p_img");
 
-        $insert_player = "insert into player (con_id,cat_id,date,player_name,player_age,player_height,player_rating,player_img) values ('$p_con','$p_cat',NOW(),'$p_name','$p_age','$p_height','$p_rating','$p_img')";
+        $insert_player = "insert into player (con_id,cat_id,date,player_name,player_age,player_rating,player_img) values ('$p_con','$p_cat',NOW(),'$p_name','$p_age','$p_rating','$p_img')";
         $run_player = mysqli_query($con,$insert_player);
 
         if($run_player){
+            echo "<script>window.open(index.php),(_self)</script>";
             echo "<script>alert('Player details added Successfully!')</script>";
-            echo "<script>window.open('index.php?player_view','_self')</script>";  
+            
+            
         }
     }
 ?>

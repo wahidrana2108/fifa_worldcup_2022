@@ -153,48 +153,26 @@
 
     <div class="mt-3">
         <div class="owl-carousel owl-theme">
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="..."> 
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
+
+            <?php
+                $get_blog = "select * from blogs";
+                $run_blog = mysqli_query($con,$get_blog);
+                while($row_blog = mysqli_fetch_array($run_blog)){
+                    $blog_id = $row_blog['blog_id'];
+                    $blog_title = $row_blog['blog_title'];
+                    $blog_desc = $row_blog['blog_desc'];
+
+                    echo "
+                    <div class='item'>
+                        <div class='card h-100'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s' class='card-img-top'> 
+                        </div>
+                        <h5 class='text-light'>$blog_title</h5>
+                    </div>
+                    ";
+                }
+            ?>
+
         </div>
     </div>
     </div>
@@ -206,55 +184,24 @@
 
     <div class="mt-3">
         <div class="owl-carousel owl-theme">
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
-        <div class='item'>
-            <div class="card h-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s" class="card-img-top" alt="...">
-            
-            </div>
-            <h3 class="text-light">Thank you</h3>
-        </div>
+            <?php
+                $get_news = "select * from news";
+                $run_news = mysqli_query($con,$get_news);
+                while($row_news = mysqli_fetch_array($run_news)){
+                    $news_id = $row_news['news_id'];
+                    $news_title = $row_news['news_title'];
+                    $news_desc = $row_news['news_desc'];
+
+                    echo "
+                    <div class='item'>
+                        <div class='card h-100'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEfL-hStRy7TalJBLxcd89LICJqVBIbky7Ujd6mqFKA&s' class='card-img-top'> 
+                        </div>
+                        <h5 class='text-light'>$news_title</h5>
+                    </div>
+                    ";
+                }
+        ?>
         </div>
     </div>
     </div>

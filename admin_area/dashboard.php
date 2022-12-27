@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION['admin_email'])){
+        echo "<script>window.open('login.php','_self')</script>";
+    }
+    else{
+?>
 
 <div class="col-lg-12">
     <!-- breadcrumb start -->
@@ -17,7 +23,7 @@
             <div class="row" >
                 <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-list ps-5"></i></div>
                 <div class="col-10 text-end p-3">
-                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_products; ?></p>
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo "hi"; ?></p>
                     <p class="pe-5">Products</p>
                 </div>
             </div>
@@ -32,7 +38,7 @@
             <div class="row" >
                 <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-users ps-5"> </i></div>
                 <div class="col-10 text-end p-3">
-                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_customers; ?></p>
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo "hi"; ?></p>
                     <p class="pe-5">Customers</p>
                 </div>
             </div>
@@ -47,7 +53,7 @@
             <div class="row" >
                 <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-tag ps-5"></i></div>
                 <div class="col-10 text-end p-3">
-                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_product_category; ?></p>
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo "hi"; ?></p>
                     <p class="pe-5">Product Categories</p>
                 </div>
             </div>
@@ -62,7 +68,7 @@
             <div class="row" >
                 <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-cart-shopping ps-5"></i></div>
                 <div class="col-10 text-end p-3">
-                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_orders; ?></p>
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo "hi"; ?></p>
                     <p class="pe-5">Orders</p>
                 </div>
             </div>
@@ -77,65 +83,5 @@
       <!-- view details end -->
 
 
-      <!-- new order list start -->
-        <div class="card border-primary mt-5 col-md-10">
-            <h5 class="card-header text-center text-light"  style="background-color: rgb(82, 127, 250);"><i class="fa-solid fa-list pe-3"></i>New Orders</h5>
-            <div class="card-body">
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col"># Order no:</th>
-                            <th scope="col">Customer Email</th>
-                            <th scope="col">Invoice NO:</th>
-                            <th scope="col">Product ID:</th>
-                            <th scope="col">Product Quantity:</th>
-                            <th scope="col">Product Size:</th>
-                            <th scope="col">Order status:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            $i = 0;
-                        
-                            $get_order = "select * from pending_orders order by 1 DESC LIMIT 0,5";
-                            $run_order = mysqli_query($con,$get_order);
-
-                            while($row_orders = mysqli_fetch_array($run_orders)){
-                                $order_id = $row_orders['order_id'];
-                                $customer_id = $row_orders['customer_id'];
-                                $invoice_no = $row_orders['invoice_no'];
-                                $product_id = $row_orders['product_id'];
-                                $qty = $row_orders['qty'];
-                                $size = $row_orders['size'];
-                                $order_status = $row_orders['order_status'];
-                                $i++;
-
-                        ?>
-                        <tr>
-
-                            <th scope="row" class="ps-5"><?php echo $order_id; ?></th>
-                            <td>
-                                <?php 
-                                    $get_customer = "select * from customers where customer_id='$customer_id'";
-                                    $run_customer = mysqli_query($con,$get_customer);
-                                    $row_customer = mysqli_fetch_array($run_customer);
-                                    $customer_email = $row_customer['customer_email'];
-                                    echo $customer_email;
-                                ?>
-                            </td>
-                            <td><?php echo $invoice_no; ?></td>
-                            <td><?php echo $product_id; ?></td>
-                            <td><?php echo $qty; ?></td>
-                            <td><?php echo $size; ?></td>
-                            <td><?php echo $order_status; ?></td>
-                        </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-      <!-- new order list end -->
-
-
 </div>
+<?php } ?>

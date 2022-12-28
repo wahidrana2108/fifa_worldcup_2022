@@ -11,7 +11,7 @@ while($row_country = mysqli_fetch_array($run_country)){
     echo "
         <tr>
             <th class='text-light'>#$con_id</th>
-            <td><img src='https://world-cup.codsfli.com/flag/QAT.png' height='50px'></td>
+            <td><img src='admin_area/country_img/$con_img' height='50px'></td>
             <td class='text-light'>$con_title</td>
             <td class='text-light ps-4'>$con_cup</td>
             <td class='text-light'>$con_point</td>

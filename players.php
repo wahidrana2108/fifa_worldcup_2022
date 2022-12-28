@@ -4,7 +4,7 @@
 ?>
 
 
-<!-- product start -->
+<!-- players start -->
 <div id="content" class="">
     <div class="container">
         <div class="col-md-12">
@@ -64,7 +64,7 @@
 
     </div>
 </div>
-<!-- product end -->
+<!-- players end -->
 
 <?php
     include("includes/footer.php");

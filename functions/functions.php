@@ -222,31 +222,43 @@ function playerCountryCategory(){
 }
 
 
+function get_blog(){
+    global $db;
+    $get_blog = "select * from blogs";
+    $run_blog = mysqli_query($db,$get_blog);
+    while($row_blog = mysqli_fetch_array($run_blog)){
+        $blog_id = $row_blog['blog_id'];
+        $blog_title = $row_blog['blog_title'];
+        $blog_img = $row_blog['blog_img'];
+
+        echo "
+            <div class='item'>
+                <div class='card h-100'><a href='blog.php?blog_id=$blog_id'><img src='admin_area/blog_img/$blog_img' class='card-img-top'></a></div>
+                <h5 class='text-light'>$blog_title</h5>
+            </div>
+        ";
+    }
+}
 
 
+function get_news(){
+    global $db;
+    $get_news = "select * from news";
+    $run_news = mysqli_query($db,$get_news);
+    while($row_news = mysqli_fetch_array($run_news)){
+        $news_id = $row_news['news_id'];
+        $news_title = $row_news['news_title'];
+        $news_desc = $row_news['news_desc'];
+        $news_img = $row_news['news_img'];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        echo "
+        <div class='item'>
+            <div class='card h-100'><a href='news.php?news_id=$news_id'><img src='admin_area/news_img/$news_img' class='card-img-top'></a></div>
+            <h5 class='text-light'>$news_title</h5>
+        </div>
+        ";
+    }
+}
 
 
 

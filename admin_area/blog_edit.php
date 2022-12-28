@@ -57,7 +57,7 @@ if(isset($_GET['blog_edit'])){
 
         $temp_name = $_FILES['b_img']['tmp_name'];
 
-        move_uploaded_file($temp_name,"player_img/$b_img");
+        move_uploaded_file($temp_name,"blog_img/$b_img");
 
         $insert_blog = "update blogs set blog_title='$b_title',blog_desc='$b_desc',blog_img='$b_img',date=NOW() where blog_id='$blog_id'";
         $run_blog = mysqli_query($con,$insert_blog);

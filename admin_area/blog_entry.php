@@ -42,7 +42,7 @@
 
         $temp_name = $_FILES['b_img']['tmp_name'];
 
-        move_uploaded_file($temp_name,"player_img/$b_img");
+        move_uploaded_file($temp_name,"blog_img/$b_img");
 
         $insert_blog = "insert into blogs (blog_title,blog_desc,blog_img,date) values ('$b_title','$b_desc','$b_img',NOW())";
         $run_blog = mysqli_query($con,$insert_blog);

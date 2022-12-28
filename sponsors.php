@@ -15,7 +15,7 @@
         <section>
             <div class="row">
                 <div class="col-12">
-                    <h4 class="text-center mb-3 fw-bolder">All Partners</h4>
+                    <h4 class="text-center mb-5 fw-bolder">All Partners</h4>
                 </div>
                 <div class="col-md-6 ">
                     <div class="">

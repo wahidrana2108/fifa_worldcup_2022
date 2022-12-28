@@ -42,7 +42,7 @@
                 
                 echo "
                 <div class='col'>
-                    <div class='card h-100'>
+                    <div class='card bg-secondary text-light h-100'>
                         <span class='position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger'>$i</span>
                         <a href='details.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
                         <div class='card-body'>

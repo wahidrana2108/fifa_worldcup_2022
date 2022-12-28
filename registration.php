@@ -7,10 +7,16 @@
 <div id="content" class="mt-3">
     <div class="container">
         <div class="col-md-12">
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Registration</li>
-            </ul>
+            <!-- breadcrumb  start -->
+            <div class="col-md-12 mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item text-light" aria-current="page"><h6><i class="fa-solid fa-home ps-2 pt-2"></i> Home</h6></li>
+                        <li class="breadcrumb-item text-light active" aria-current="page"><i class="fa-solid fa-address-card pt-2"></i> Registration</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- breadcrumb  end -->
         </div>
   
         <div class="col-md-9 m-auto">
@@ -56,7 +62,7 @@
   
                         <label>Your Contract</label>
   
-                        <input type="text" class="form-control" name="c_contact" required>
+                        <input type="number" class="form-control" name="c_contact" required>
   
                     </div>
   

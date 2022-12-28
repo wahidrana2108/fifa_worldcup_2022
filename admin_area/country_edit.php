@@ -14,8 +14,19 @@ if(isset($_GET['country_edit'])){
 }
 ?>
 
+<!-- breadcrumb  start -->
+<div class="col-md-12 mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page"><h6><i class="fa-solid fa-gauge ps-2 pt-2"></i> Dashboard</h6></li>
+            <li class="breadcrumb-item active" aria-current="page"><i class="fa-solid fa-pen pt-2"></i> Edit Country</li>
+        </ol>
+    </nav>
+</div>
+<!-- breadcrumb  end -->
 
-<!-- player Entry start -->
+
+<!-- country edit start -->
 <div class="container  pt-4 d-flex justify-content-center">
     <div class="col-md-6 ">
         <form method="post" enctype="multipart/form-data">
@@ -41,7 +52,7 @@ if(isset($_GET['country_edit'])){
         </form>
     </div>
 </div>
-<!-- player Entry end -->
+<!-- country edit end -->
 
 <?php
     if(isset($_POST['update'])){

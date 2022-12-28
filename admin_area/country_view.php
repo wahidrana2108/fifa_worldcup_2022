@@ -4,7 +4,18 @@
     }
     else{
 ?>
-  <!-- new order list start -->
+
+  <!-- breadcrumb  start -->
+    <div class="col-md-12 mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><h6><i class="fa-solid fa-gauge ps-2 pt-2"></i> Dashboard</h6></li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="fa-solid fa-pen pt-2"></i> View Country</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- breadcrumb  end -->
+  <!-- view country start -->
   <div class="card border-primary mt-5 col-md-10">
     <h5 class="card-header text-center text-light"  style="background-color: rgb(82, 127, 250);"><i class="fa-solid fa-globe pe-3"></i></i>Country</h5>
     <div class="card-body">
@@ -52,5 +63,5 @@
         </table>
     </div>
 </div>
-<!-- new order list end -->
+<!-- view country end -->
 <?php } ?>

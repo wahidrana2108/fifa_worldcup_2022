@@ -13,6 +13,10 @@
         $admin_id = $row_admin['admin_id'];
         $admin_name = $row_admin['admin_name'];
 
+        $get_player = "select * from player";
+        $run_player = mysqli_query($con,$get_player);
+        $count_player = mysqli_num_rows($run_player);
+
         $get_category = "select * from category";
         $run_category = mysqli_query($con,$get_category);
         $count_category = mysqli_num_rows($run_category);
@@ -20,6 +24,14 @@
         $get_customers = "select * from customers";
         $run_customers = mysqli_query($con,$get_customers);
         $count_customers = mysqli_num_rows($run_customers);
+
+        $get_blogs = "select * from blogs";
+        $run_blogs = mysqli_query($con,$get_blogs);
+        $count_blogs = mysqli_num_rows($run_blogs);
+
+        $get_news = "select * from news";
+        $run_news = mysqli_query($con,$get_news);
+        $count_news = mysqli_num_rows($run_news);
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,6 +111,18 @@
                 }
                 if(isset($_GET['country_edit'])){
                     include("country_edit.php");
+                }
+                if(isset($_GET['category_entry'])){
+                    include("category_entry.php");
+                }
+                if(isset($_GET['category_view'])){
+                    include("category_view.php");
+                }
+                if(isset($_GET['category_delete'])){
+                    include("category_delete.php");
+                }
+                if(isset($_GET['category_edit'])){
+                    include("category_edit.php");
                 }
         ?> 
         </div>

@@ -13,6 +13,12 @@
             <li><a class="dropdown-item" href="index.php?country_view">View Countries</a></li>
         </ul>
     </li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-list pe-3"></i> Category</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.php?category_entry">Insert Category</a></li>
+            <li><a class="dropdown-item" href="index.php?category_view">View Categories</a></li>
+        </ul>
+    </li>
     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user pe-3"></i> Player</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?player_entry">Insert Player</a></li>

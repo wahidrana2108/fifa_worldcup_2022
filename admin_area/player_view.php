@@ -64,7 +64,7 @@
                     </td>
                     <td><?php echo $player_rating; ?></td>
                     <td><img src="player_img/<?php echo $player_img; ?>" alt="N/A" height="50px" width="50px"></td>
-                    <td><a href="index.php?edit_category=<?php echo $cat_id; ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
+                    <td><a href="index.php?player_edit=<?php echo $player_id; ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
                     <td><a href="index.php?player_delete=<?php echo $player_id; ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</a></td>
                 </tr>
                 <?php } ?>

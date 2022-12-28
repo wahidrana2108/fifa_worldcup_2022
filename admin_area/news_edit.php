@@ -1,0 +1,60 @@
+<?php
+if(isset($_GET['news_edit'])){
+    $edit_id = $_GET['news_edit'];
+    $get_n = "select * from news where news_id='$edit_id'";
+    $run_edit = mysqli_query($con,$get_n);
+    $row_edit = mysqli_fetch_array($run_edit);
+
+    $news_id = $row_edit['news_id'];
+    $news_title = $row_edit['news_title'];
+    $news_desc = $row_edit['news_desc'];
+    $news_img = $row_edit['news_img'];
+
+}
+?>
+
+
+
+<!-- player Entry start -->
+<div class="container  pt-4 d-flex justify-content-center">
+    <div class="col-md-6 ">
+        <form method="post" enctype="multipart/form-data">
+            <legend class="text-center text-light fw-bolder">Add New news</legend>
+            <div class="form-floating mb-3">
+                <input name="n_title" type="text" class="form-control" placeholder="Enter news Title" value="<?php echo $news_title?>" required>
+                <label>Enter news Name</label>
+            </div>
+            <div class="form-floating">
+                <textarea name="n_desc" class="form-control" placeholder="Enter news Description" id="" style="height: 100px" value="<?php echo $news_desc?>" required><?php echo $news_desc; ?></textarea>
+                <label>Enter news Description</label>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light">Player Photo</label>
+                <input name="n_img" type="file" class="form-control" required>
+            </div>
+            <input name="update" value="Update news" type="submit" class="btn btn-primary form-control">
+        </form>
+    </div>
+</div>
+<!-- player Entry end -->
+
+<?php
+    if(isset($_POST['update'])){
+        $n_title = $_POST['n_title'];
+        $n_desc = $_POST['n_desc'];
+
+        $n_img = $_FILES['n_img']['name'];
+
+        $temp_name = $_FILES['n_img']['tmp_name'];
+
+        move_uploaded_file($temp_name,"news_img/$n_img");
+
+        $update_news = "update news set news_title='$n_title',news_desc='$n_desc',news_img='$n_img',date=NOW() where news_id='$news_id'";
+        $run_update = mysqli_query($con,$update_news);
+
+        if($run_update){
+            echo "<script>alert('news details Updated Successfully!')</script>";
+            echo "<script>window.open('index.php?news_view','_self')</script>";  
+        }
+    }
+?>

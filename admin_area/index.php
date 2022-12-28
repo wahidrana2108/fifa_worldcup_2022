@@ -61,6 +61,45 @@
                 if(isset($_GET['player_delete'])){
                     include("player_delete.php");
                 }
+                if(isset($_GET['player_edit'])){
+                    include("player_edit.php");
+                }
+                if(isset($_GET['blog_entry'])){
+                    include("blog_entry.php");
+                }
+                if(isset($_GET['blog_view'])){
+                    include("blog_view.php");
+                }
+                if(isset($_GET['blog_delete'])){
+                    include("blog_delete.php");
+                }
+                if(isset($_GET['blog_edit'])){
+                    include("blog_edit.php");
+                }
+                if(isset($_GET['news_entry'])){
+                    include("news_entry.php");
+                }
+                if(isset($_GET['news_view'])){
+                    include("news_view.php");
+                }
+                if(isset($_GET['news_delete'])){
+                    include("news_delete.php");
+                }
+                if(isset($_GET['news_edit'])){
+                    include("news_edit.php");
+                }
+                if(isset($_GET['country_entry'])){
+                    include("country_entry.php");
+                }
+                if(isset($_GET['country_view'])){
+                    include("country_view.php");
+                }
+                if(isset($_GET['country_delete'])){
+                    include("country_delete.php");
+                }
+                if(isset($_GET['country_edit'])){
+                    include("country_edit.php");
+                }
         ?> 
         </div>
         <!-- dashboard end -->

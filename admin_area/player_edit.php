@@ -24,22 +24,9 @@ $get_con = "select * from country where con_id='$con_id'";
 $run_con = mysqli_query($con,$get_con);
 $row_con = mysqli_fetch_array($run_con);
 $con_title = $row_con['con_name'];
+
 ?>
-
-
-<!-- breadcrumb  start -->
-<div class="col-md-12 mt-3">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page"><h6><i class="fa-solid fa-gauge ps-2 pt-2"></i> Dashboard</h6></li>
-            <li class="breadcrumb-item active" aria-current="page"><i class="fa-solid fa-pen pt-2"></i> Edit Player</li>
-        </ol>
-    </nav>
-</div>
-<!-- breadcrumb  end -->
-
-
-<!-- player edit start -->
+<!-- player Entry start -->
 <div class="container  pt-4 d-flex justify-content-center">
     <div class="col-md-6 ">
         <form method="post" enctype="multipart/form-data">
@@ -106,7 +93,7 @@ $con_title = $row_con['con_name'];
         </form>
     </div>
 </div>
-<!-- player edit end -->
+<!-- player Entry end -->
 
 <?php
     if(isset($_POST['update'])){

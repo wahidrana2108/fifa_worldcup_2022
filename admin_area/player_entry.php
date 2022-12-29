@@ -66,6 +66,10 @@
                 <label for="">Enter Height(cm)</label>
             </div>
             <div class="form-floating mb-3">
+                <input name="p_weight" type="number" min="0" max="210" step="1" pattern="^[-/d]/d*$" class="form-control" placeholder="Enter Weight(kg)" required>
+                <label for="">Enter Weight(kg)</label>
+            </div>
+            <div class="form-floating mb-3">
                 <input name="p_rating" type="number" min="0" max="2000" step="1" pattern="^[-/d]/d*$" class="form-control" placeholder="Enter Rating" required>
                 <label for="">Enter Points</label>
             </div>
@@ -86,6 +90,7 @@
         $p_con = $_POST['p_con'];
         $p_cat = $_POST['p_cat'];
         $p_height = $_POST['p_height'];
+        $p_weight = $_POST['p_weight'];
         $p_rating = $_POST['p_rating'];
 
         $p_img = $_FILES['p_img']['name'];
@@ -94,7 +99,7 @@
 
         move_uploaded_file($temp_name,"player_img/$p_img");
 
-        $insert_player = "insert into player (con_id,cat_id,date,player_name,player_age,player_height,player_rating,player_img) values ('$p_con','$p_cat',NOW(),'$p_name','$p_age','$p_height','$p_rating','$p_img')";
+        $insert_player = "insert into player (con_id,cat_id,date,player_name,player_age,player_height,player_weight,player_rating,player_img) values ('$p_con','$p_cat',NOW(),'$p_name','$p_age','$p_height','$p_weight','$p_rating','$p_img')";
         $run_player = mysqli_query($con,$insert_player);
 
         if($run_player){

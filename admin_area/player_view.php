@@ -29,6 +29,7 @@
                     <th scope="col">Country</th>
                     <th scope="col">Name</th>
                     <th scope="col">Height(cm)</th>
+                    <th scope="col">Weight(kg)</th>
                     <th scope="col">Age</th>
                     <th scope="col">Position</th>
                     <th scope="col">Points</th>
@@ -50,6 +51,7 @@
                         $con_id = $row_player['con_id'];
                         $cat_id = $row_player['cat_id'];
                         $player_height = $row_player['player_height'];
+                        $player_weight = $row_player['player_weight'];
                         $player_age = $row_player['player_age'];
                         $player_rating = $row_player['player_rating'];
                         $player_img = $row_player['player_img'];
@@ -67,6 +69,7 @@
                     </td>
                     <td><?php echo $player_name; ?></td>
                     <td><?php echo $player_height; ?></td>
+                    <td><?php echo $player_weight; ?></td>
                     <td><?php echo $player_age; ?></td>
                     <td><?php
                             $get_cat = "select * from category where cat_id='$cat_id'";

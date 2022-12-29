@@ -233,7 +233,7 @@ function get_blog(){
 
         echo "
             <div class='item'>
-                <div class='card h-100'><a href='blog.php?blog_id=$blog_id'><img src='admin_area/blog_img/$blog_img' class='card-img-top'></a></div>
+                <div class='card h-100'><a href='blog.php?blog_id=$blog_id'><img src='admin_area/blog_img/$blog_img' class='card-img-top' height='175px'></a></div>
                 <h5 class='text-light'>$blog_title</h5>
             </div>
         ";
@@ -253,7 +253,7 @@ function get_news(){
 
         echo "
         <div class='item'>
-            <div class='card h-100'><a href='news.php?news_id=$news_id'><img src='admin_area/news_img/$news_img' class='card-img-top'></a></div>
+            <div class='card h-100'><a href='news.php?news_id=$news_id'><img src='admin_area/news_img/$news_img' class='card-img-top' height='175px'></a></div>
             <h5 class='text-light'>$news_title</h5>
         </div>
         ";

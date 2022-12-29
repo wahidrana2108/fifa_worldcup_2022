@@ -14,7 +14,7 @@
     <div class="container d-flex justify-content-center pt-5">
         <img src="admin_area/images/logo.png" alt="" srcset="" style="max-height: 250px; ">
     </div>
-    <h4 class="text-center pt-4"><i class="fa-sharp fa-solid fa-house"></i> FIFA Worldcup 2022</h4>
+    <h4 class="text-center pt-4 text-light"><i class="fa-sharp fa-solid fa-house"></i> FIFA Worldcup 2022</h4>
     <h6 class="text-center text-muted"><i class="fa-solid fa-location-dot"></i> Jahurul Islam Ave, Dhaka 1212, Bangladesh</h6>
     <h6 class="text-center text-muted"><i class="fa-solid fa-envelope"></i> fifa2022@support.com</h6>
     <h6 class="text-center text-muted pb-4"><i class="fa-solid fa-phone"></i> +969696969696</h6>

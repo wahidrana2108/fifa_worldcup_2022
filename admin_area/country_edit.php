@@ -45,7 +45,7 @@ if(isset($_GET['country_edit'])){
             </div>
             <div class="mb-3">
                 <label class="form-label text-light">Enter Flag Photo</label>
-                <input name="c_img" type="file" class="form-control" required>
+                <input name="c_img" type="file" class="form-control" required><br>
                 <img src="country_img/<?php echo $country_img; ?>" height="50px" width="50px">
             </div>
             <input name="update" value="Update country" type="submit" class="btn btn-primary form-control">

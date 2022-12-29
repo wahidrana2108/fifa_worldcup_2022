@@ -41,13 +41,9 @@
                 echo "
                 <div class='col'>
                     <div class='card bg-secondary text-light h-100'>
-                        <a href='details.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
+                        <a href='player_profile.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
                         <div class='card-body'>
                             <h5 class='card-title text-center fw-bolder'>$p_name</h5>
-                            <h6 class='card-title text-center fw-bolder'>Position: $pose_title</h6>
-                            <h6 class='card-title text-center fw-bolder'>Age: $p_age</h6>
-                            <h6 class='card-title text-center fw-bolder'>Country: $con_title</h6>
-                            <h6 class='card-title text-center fw-bolder'>Rating: $p_rating/10</h6>
                         </div>
                     </div>
                 </div>

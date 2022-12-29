@@ -40,7 +40,8 @@ if(isset($_GET['news_edit'])){
             </div>
             <div class="mb-3">
                 <label class="form-label text-light">Player Photo</label>
-                <input name="n_img" type="file" class="form-control" required>
+                <input name="n_img" type="file" class="form-control" required><br>
+                <img src="news_img/<?php echo $news_img; ?>" height="50px" width="50px">
             </div>
             <input name="update" value="Update news" type="submit" class="btn btn-primary form-control">
         </form>

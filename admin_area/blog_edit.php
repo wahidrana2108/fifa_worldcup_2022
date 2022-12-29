@@ -40,7 +40,8 @@ if(isset($_GET['blog_edit'])){
             </div>
             <div class="mb-3">
                 <label class="form-label text-light">Player Photo</label>
-                <input name="b_img" type="file" class="form-control" required>
+                <input name="b_img" type="file" class="form-control" required><br>
+                <img src="blog_img/<?php echo $blog_img; ?>" height="50px" width="50px">
             </div>
             <input name="update" value="Update Blog" type="submit" class="btn btn-primary form-control">
         </form>

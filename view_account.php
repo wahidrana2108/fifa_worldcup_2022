@@ -12,6 +12,12 @@ $customer_session = $_SESSION['customer_email'];
     $customer_country = $row_customer['customer_country'];
     $customer_id = $row_customer['customer_id'];
     $customer_pass = $row_customer['customer_pass'];
+    $customer_sub = $row_customer['sub_id'];
+
+    $get_sub =  "select * from subscription where sub_id='$customer_sub'";
+    $run_sub = mysqli_query($con,$get_sub);
+    $row_sub = mysqli_fetch_array($run_sub);
+    $sub_title = $row_sub['sub_title'];
 
     echo "
     <div class='col-md-8 text-light m-auto'>
@@ -33,6 +39,10 @@ $customer_session = $_SESSION['customer_email'];
                 <div class='row'>
                     <div class='col-3'><h6>Country:</h6></div>
                     <div class='col-9'><h6>$customer_country</h6></div>
+                </div><br>
+                <div class='row'>
+                    <div class='col-3'><h6>subscription:</h6></div>
+                    <div class='col-9'><h5><span class='badge rounded-pill text-bg-danger'>$sub_title</span></h5></div>
                 </div>
             </div>
         </div>

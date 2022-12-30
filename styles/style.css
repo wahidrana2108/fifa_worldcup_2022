@@ -26,7 +26,7 @@ body{
 .dot {
     height: 40px;
     width: 40px;
-    background-color: #bbb;
+    background-color: rgb(27, 27, 27);
     border-radius: 50%;
     display: inline-block;
   }

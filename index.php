@@ -38,7 +38,7 @@
         <h4 class="text-light text-center">Final Match</h4>
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1">
             <div class="col">
-                <div class="card m-auto h-100 pt-1 pb-1 ps-2 pe-2 bg-light" style="max-width: 40rem;">
+                <div class="card m-auto h-100 pt-1 pb-1 ps-2 pe-2 text-light" style="max-width: 40rem; background-color: rgb(48, 48, 48);">
                     <div class=""></div>
                     <div class="d-flex justify-content-between">
                         <h6>FIFA World Cup 2022</h6>
@@ -59,7 +59,7 @@
                     </div><br>
 
                     <div class="d-flex justify-content-center">
-                        <h6 class="text-success ">Argentina won in Penalty by 4-0 with France</h6>
+                        <h6 class="text-success">Argentina won in Penalty by 4-0 with France</h6>
                     </div><br>
 
                     <div class="d-flex justify-content-between">

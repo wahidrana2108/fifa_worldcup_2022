@@ -19,35 +19,24 @@ $active='My Account';
                     <div class='card-body text-start bg-dark'>
                         <form action='my_account.php?edit_account' method='post' enctype='multipart/form-data'>
 
-                            <div class='form-group'>
-        
-                                <label>Full Name</label>
-        
+                            <div class='form-group'>        
+                                <label>Full Name</label>       
                                 <input type='text' class='form-control' name='c_name' value='$customer_name' required>
-        
-                            </div>
-                            
-                            <div class='form-group'>
-        
-                                <label>Your Contract</label>
-        
-                                <input type='number' class='form-control' name='c_contact' value='$customer_contact' required>
-        
+                            </div>   
+
+                            <div class='form-group'>       
+                                <label>Your Contract</label>       
+                                <input type='number' class='form-control' name='c_contact' value='$customer_contact' required>       
                             </div>        
         
-                            <div class='form-group'>
-        
-                                <label>Select Country</label>
-        
-                                <input type='text' class='form-control' name='c_country' value='$customer_country' required>
-        
+                            <div class='form-group'>       
+                                <label>Select Country</label>       
+                                <input type='text' class='form-control' name='c_country' value='$customer_country' required>       
                             </div>
         
         
-                            <div class='text-center mt-2'>
-        
-                                <button type='submit' name='update_info' class='btn btn-primary'>Register</button>
-        
+                            <div class='text-center mt-2'>       
+                                <button type='submit' name='update_info' class='btn btn-primary'>Register</button>       
                             </div>
         
                         </form>

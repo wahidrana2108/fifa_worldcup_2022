@@ -29,11 +29,12 @@ include('includes/header.php');
                             <li class='nav-item text-center text-light pb-3'>
                                 <img src='customer_images/$customer_image' class='mb-3' height='100px' width='100px' style='border-radius:50%'>
                                 <h4>$customer_name</h4>
-                                <h5><span class='badge rounded-pill text-bg-danger'>normal user</span></h5>
                             </li>
                             <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?view_account'><i class='fa-sharp fa-solid fa-eye'></i> View Details</a></li>
                             <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?edit_account'><i class='fa-solid fa-pen-to-square pe-3'></i> Edit Account</a></li>
                             <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?update_password'><i class='fa-solid fa-key pe-3'></i> Edit Password</a></li>
+                            <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?vip_facility'><i class='fa-solid fa-snowflake pe-3'></i> VIP Facility</a></li>
+                            <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?become_vip'><i class='fa-solid fa-check pe-3'></i> Become A VIP</a></li>
                             <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?delete_account'><i class='fa-solid fa-trash pe-3'></i> Delete Account</a></li>
                         </ul>
                     </div>
@@ -50,6 +51,12 @@ include('includes/header.php');
                         }
                         if(isset($_GET['delete_account'])){
                             include("delete_account.php");
+                        }
+                        if(isset($_GET['vip_facility'])){
+                            include("vip_facility.php");
+                        }
+                        if(isset($_GET['become_vip'])){
+                            include("become_vip.php");
                         }
 
         echo "

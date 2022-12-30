@@ -15,12 +15,12 @@ $active='My Account';
                 <div class='card border-dark m-auto'>
                     <h5 class='card-header text-center' style='background-color: rgb(48, 48, 48);'><i class='fa-solid fa-key pe-3'></i></i>Update Password</h5>
                     <div class='card-body text-start bg-dark'>
-                        <form action='my_account.php?update_password.php' method='post' enctype='multipart/form-data'>
+                        <form action='my_account.php?update_password' method='post' enctype='multipart/form-data'>
 
                             <div class='form-group'>
 
                             <div class='form-group'>
-                                <label>Present Password</label>
+                                <label>Current Password</label>
                                 <input type='password' class='form-control' name='old_pass' required>
                             </div>
 
@@ -58,9 +58,9 @@ $active='My Account';
                         echo"<script>alert('Password already in use. Choose a different one!')</script>";
                     }
                     else{
-                        $update_password = "update customers set customer_pass='$new_password' where customer_id='customer_id'";
-                        $run_update = mysqli_query($con,$update_password);
-                        if($run_update){
+                        $update_password = "update customers set customer_pass='$new_password' where customer_id='$customer_id'";
+                        $update_pass = mysqli_query($con,$update_password);
+                        if($update_pass){
                             echo "<script>window.open('my_account.php','self')</script>";
                             echo"<script>alert('Password Updated Successfully!')</script>";
                         }

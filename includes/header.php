@@ -40,7 +40,7 @@
                         </ul>
                     </li>
                     <li class="nav-item <?php if($active=='Contact') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="contact.php">Contact Us</a></li>
-                    <li class="nav-item <?php if($active=='My Account') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="my_account.php">My Account</a></li>
+                    <li class="nav-item <?php if($active=='My Account') echo"activePage"; ?>"><a class="nav-link active text-light" aria-current="page" href="my_account.php?view_account">My Account</a></li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,7 +79,7 @@
                                             echo "<a href='login.php' class='dropdown-item'>Login</a>";
                                         }
                                         else{
-                                            echo "<a href='my_account.php' class='dropdown-item'>My Account</a>";
+                                            echo "<a href='my_account.php?view_account' class='dropdown-item'>My Account</a>";
                                         }
                                     ?>
                                 </li>

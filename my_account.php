@@ -1,8 +1,12 @@
 <?php
+$active='My Account';
     
 include('includes/header.php');
+    if(!isset($_SESSION['customer_email'])){
+        echo "<script>window.open('login.php','_self')</script>";
+    } 
 
-    if(isset($_SESSION['customer_email'])){
+    else{
       
       $customer_session = $_SESSION['customer_email'];
       $get_customer = "select * from customers where customer_email='$customer_session'";
@@ -13,77 +17,55 @@ include('includes/header.php');
       $customer_email = $row_customer['customer_email'];
       $customer_contact = $row_customer['customer_contact'];
       $customer_country = $row_customer['customer_country'];
-      echo" 
-        <div class='container text-light text-center mt-5'>
-            <div class='row'>
-                <div class='col-md-4'>
-                    <h4>$customer_name</h4>
-                    <img src='customer_images/$customer_image' class='mt-2 mb-3' height='100px' width='100px' style='border-radius:50%'>
-                    <h5><span class='badge rounded-pill text-bg-danger'>normal user</span></h5>
-                </div>
-                <div class='col-md-8 pt-3'>
-                    <div class='card border-dark col-md-12 m-auto'>
-                        <h5 class='card-header text-center text-light' style='background-color: rgb(48, 48, 48);'><i class='fa-solid fa-user pe-3'></i></i>Account Details</h5>
-                        <div class='card-body text-start bg-dark'>
-                            <div class='row'>
-                                <div class='col-3'><h6>Name:</h6></div>
-                                <div class='col-9'><h6>$customer_name</h6></div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-3'><h6>Email:</h6></div>
-                                <div class='col-9'><h6>$customer_email</h6></div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-3'><h6>Contact:</h6></div>
-                                <div class='col-9'><h6>$customer_contact</h6></div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-3'><h6>Country:</h6></div>
-                                <div class='col-9'><h6>$customer_country</h6></div>
-                            </div>
-                            
+      $customer_id = $row_customer['customer_id'];
+      $customer_pass = $row_customer['customer_pass'];
 
-                        </div>
+
+      echo "      
+            <div class='container pt-5'>
+                <div class='row'>
+                    <div class='col-sm-12 col-md-2 pb-5'>
+                        <ul class='navbar-nav navbar-dark bg-dark ps-3 pe-3'>
+                            <li class='nav-item text-center text-light pb-3'>
+                                <img src='customer_images/$customer_image' class='mb-3' height='100px' width='100px' style='border-radius:50%'>
+                                <h4>$customer_name</h4>
+                                <h5><span class='badge rounded-pill text-bg-danger'>normal user</span></h5>
+                            </li>
+                            <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?view_account'><i class='fa-sharp fa-solid fa-eye'></i> View Details</a></li>
+                            <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?edit_account'><i class='fa-solid fa-pen-to-square pe-3'></i> Edit Account</a></li>
+                            <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?update_password'><i class='fa-solid fa-key pe-3'></i> Edit Password</a></li>
+                            <li class='nav-item '><a class='nav-link active text-light' aria-current='page' href='my_account.php?delete_account'><i class='fa-solid fa-trash pe-3'></i> Delete Account</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class='col-12 m-5'>
-                    <div class='container'>
-                        <div class='d-flex text-start'>
-                            <div class='nav flex-column nav-pills me-3' id='v-pills-tab' role='tablist' aria-orientation='vertical'>
-                                <button class='nav-link text-light' id='v-pills-messages-tab' data-bs-toggle='pill' data-bs-target='#v-pills-messages' type='button' role='tab' aria-controls='v-pills-messages' aria-selected='false'><i class='fa-solid fa-pen-to-square'></i> Edit Account</button>
-                                <button class='nav-link text-light' id='v-pills-edit-tab' data-bs-toggle='pill' data-bs-target='#v-pills-edit' type='button' role='tab' aria-controls='v-pills-edit' aria-selected='false'><i class='fa-solid fa-user'></i> Edit Password</button>
-                                <button class='nav-link text-light' id='v-pills-delete-tab' data-bs-toggle='pill' data-bs-target='#v-pills-delete' type='button' role='tab' aria-controls='v-pills-delete' aria-selected='false'><i class='fa-solid fa-trash'></i> Delete Account</button>
-                            </div>
-                            <div class='tab-content mt-2' id='v-pills-tabContent'>
-                                <div class='tab-pane fade' id='v-pills-messages' role='tabpanel' aria-labelledby='v-pills-messages-tab' tabindex='0'>edit</div>
-                                <div class='tab-pane fade' id='v-pills-edit' role='tabpanel' aria-labelledby='v-pills-edit-tab' tabindex='0'>Delete</div>
-                                <div class='tab-pane fade' id='v-pills-delete' role='tabpanel' aria-labelledby='v-pills-delete-tab' tabindex='0'>delete account</div>
-                            </div>
-                        </div>
+                    <div class='col-sm-12 col-md-10'>
+        ";  
+                        if(isset($_GET['view_account'])){
+                            include("view_account.php");
+                        }
+                        if(isset($_GET['edit_account'])){
+                            include("edit_account.php");
+                        }
+                        if(isset($_GET['update_password'])){
+                            include("update_password.php");
+                        }
+                        if(isset($_GET['delete_account'])){
+                            include("delete_account.php");
+                        }
+
+        echo "
                     </div>
                 </div>
             </div>
-        </div>
-        ";
+      ";
     }
-    else{
-        echo "<script>window.open('login.php','_self')</script>";
-    } 
 
-include('includes/footer.php');
 ?>
 
+        
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+<?php include('includes/footer.php'); ?>

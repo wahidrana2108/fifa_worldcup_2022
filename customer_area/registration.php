@@ -80,6 +80,7 @@
                         <button type='submit' name='register' class='btn btn-primary'>Register</button>
 
                     </div>
+                    <small class="fw-bolder"><i>Already an account? <a href="login.php">Click here</a></i></small>
 
                 </form>
             </div>

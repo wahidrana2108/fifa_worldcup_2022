@@ -4,11 +4,12 @@
             <div class="row justify-content-center mt-3">
                 <div class="col-md-3 p-3 m-3">
                     <li class="nav-item"> <a class="nav-link fw-bolder text-light" aria-current="page" href="#"><h4>Pages</h4></a></li>
-                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#">Players</a></li>
-                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#">Teams</a></li>
-                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#">Ranking</a></li>
-                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="#">Schedules</a></li>
+                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="index.php">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="players.php">Players</a></li>
+                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="team.php">Teams</a></li>
+                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="rankings.php">Ranking</a></li>
+                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="sponsors.php">Sponsors</a></li>
+                    <li class="nav-item"> <a class="nav-link active text-light" aria-current="page" href="schedule.php">Schedules</a></li>
                 </div>
                 
                 <div class="col-md-3 p-3 m-3">

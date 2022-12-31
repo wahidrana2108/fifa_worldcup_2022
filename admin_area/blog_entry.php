@@ -27,14 +27,14 @@
                 <label class="form-label text-light">Player Photo</label>
                 <input name="b_img" type="file" class="form-control" required>
             </div>
-            <input name="submit" value="Insert Blog" type="submit" class="btn btn-primary form-control">
+            <input name="blog_enter" value="Insert Blog" type="submit" class="btn btn-primary form-control">
         </form>
     </div>
 </div>
 <!-- Blog Entry end -->
 
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['blog_enter'])){
         $b_title = $_POST['b_title'];
         $b_desc = $_POST['b_desc'];
 
@@ -48,8 +48,8 @@
         $run_blog = mysqli_query($con,$insert_blog);
 
         if($run_blog){
-            echo "<script>alert('Blog details added Successfully!')</script>";
-            echo "<script>window.open('index.php?blog_view','_self')</script>";  
+            echo "<script>alert('Blog details added Successfully!')</script>"; 
+            echo "<script>window.open('index.php?blog_view','_self')</script>"; 
         }
     }
 ?>

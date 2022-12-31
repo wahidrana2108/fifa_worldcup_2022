@@ -33,19 +33,19 @@
                                 <li class="nav-item">
                                     <?php
                                         if(!isset($_SESSION['customer_email'])){
-                                            echo "<a href='customer_area/login.php' class='dropdown-item active text-light'>Login</a>";
+                                            echo "<a href='login.php' class='dropdown-item active text-light'>Login</a>";
                                         }
                                         else{
-                                            echo "<a href='customer_area/myAccount.php' class='dropdown-item active text-light'>My Account</a>";
+                                            echo "<a href='myAccount.php' class='dropdown-item active text-light'>My Account</a>";
                                         }
                                     ?>
                                 </li>
                                 <li class="nav-item">
                                     <?php                           
                                     if(!isset($_SESSION['customer_email'])){                      
-                                        echo "<a href='customer_area/registration.php' class='dropdown-item active text-light'>Register</a>";
+                                        echo "<a href='registration.php' class='dropdown-item active text-light'>Register</a>";
                                     }else{
-                                        echo " <a href='customer_area/logout.php' class='dropdown-item active text-light'>Log Out</a> ";
+                                        echo " <a href='logout.php' class='dropdown-item active text-light'>Log Out</a> ";
                                     }                          
                                     ?>
                                 </li>

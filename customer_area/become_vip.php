@@ -27,9 +27,15 @@ if(isset($_SESSION['customer_email'])){
         $up = 2;
         $update_sub = "update customers set sub_id='$up' where customer_id='$customer_id'";
         $run_up = mysqli_query($con,$update_sub);
-        if($run_up){
+        if($customer_sub < 2){
+            if($run_up){
+                echo"<script>window.open('my_account.php?view_account','_self')</script>";
+                echo"<script>alert('Congratulation! Now You are VIP...')</script>";
+            }
+        }
+        else{
             echo"<script>window.open('my_account.php?view_account','_self')</script>";
-            echo"<script>alert('Congratulation! Now You are VIP...')</script>";
+            echo"<script>alert('You are already Subscribed!')</script>";
         }
     }
 } 

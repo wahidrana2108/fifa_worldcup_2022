@@ -51,7 +51,7 @@
                     <td><?php echo $blog_title; ?></td>
                     <td><?php echo $blog_desc; ?></td>
                     <td><?php echo $date; ?></td>
-                    <td><img src="player_img/<?php echo $blog_img; ?>" alt="N/A" height="50px" width="50px"></td>
+                    <td><img src="blog_img/<?php echo $blog_img; ?>" alt="N/A" height="50px" width="50px"></td>
                     <td><a href="index.php?blog_edit=<?php echo $blog_id; ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
                     <td><a href="index.php?blog_delete=<?php echo $blog_id; ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</a></td>
                 </tr>

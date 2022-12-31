@@ -124,6 +124,12 @@
                 if(isset($_GET['category_edit'])){
                     include("category_edit.php");
                 }
+                if(isset($_GET['customer_view'])){
+                    include("customer_view.php");
+                }
+                if(isset($_GET['customer_delete'])){
+                    include("customer_delete.php");
+                }
         ?> 
         </div>
         <!-- dashboard end -->

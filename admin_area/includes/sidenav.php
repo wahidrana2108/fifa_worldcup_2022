@@ -37,6 +37,7 @@
             <li><a class="dropdown-item" href="index.php?news_view">View News</a></li>
         </ul>
     </li>
+    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?customer_view"><i class="fa-solid fa-users pe-3"></i> View Customers</a></li>
     <li class="nav-item mb-5"><a class="nav-link active text-light" aria-current="page" href="logout.php"><i class="fa-solid fa-power-off pe-3"></i> Log Out</a></li>
 </ul>
 

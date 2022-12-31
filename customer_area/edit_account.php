@@ -36,7 +36,7 @@ $active='My Account';
         
         
                             <div class='text-center mt-2'>       
-                                <button type='submit' name='update_info' class='btn btn-primary'>Register</button>       
+                                <button type='submit' name='update_info' class='btn btn-primary'>Update info</button>       
                             </div>
         
                         </form>
@@ -54,8 +54,8 @@ $active='My Account';
             $update_details = "update customers set customer_name='$c_name',customer_contact='$c_contact',customer_country='$c_country' where customer_id='$customer_id'";
             $run_update = mysqli_query($con,$update_details);
             if($run_update){
-                echo"<script>window.open('my_account.php?view_account','_self')</script>";
                 echo"<script>alert('Information Updated Successfully!')</script>";
+                echo"<script>window.open('my_account.php?view_account','_self')</script>";
             }
         }
             

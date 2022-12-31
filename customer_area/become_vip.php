@@ -29,13 +29,13 @@ if(isset($_SESSION['customer_email'])){
         $run_up = mysqli_query($con,$update_sub);
         if($customer_sub < 2){
             if($run_up){
-                echo"<script>window.open('my_account.php?view_account','_self')</script>";
                 echo"<script>alert('Congratulation! Now You are VIP...')</script>";
+                echo"<script>window.open('my_account.php?view_account','_self')</script>";
             }
         }
         else{
-            echo"<script>window.open('my_account.php?view_account','_self')</script>";
             echo"<script>alert('You are already Subscribed!')</script>";
+            echo"<script>window.open('my_account.php?view_account','_self')</script>";
         }
     }
 } 

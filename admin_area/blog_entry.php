@@ -48,8 +48,8 @@
         $run_blog = mysqli_query($con,$insert_blog);
 
         if($run_blog){
-            echo "<script>alert('Blog details added Successfully!')</script>"; 
-            echo "<script>window.open('index.php?blog_view','_self')</script>"; 
+            echo "<script>alert('Blog details added Successfully!')</script>";  
+            echo "<script>window.open('index.php?blog_view','_self')</script>";
         }
     }
 ?>

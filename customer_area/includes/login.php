@@ -11,7 +11,7 @@
     <div class="text-center mt-2">
         <button type="submit" name="login" value="login" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
     </div>
-    <small class="fw-bolder"><i>Forgot Password? <a href="registration.php">Click here</a></i></small><br>
+    <small class="fw-bolder"><i>Forgot Password? <a href="forget_password.php">Click here</a></i></small><br>
     <small class="fw-bolder"><i>Don't have an account? <a href="registration.php">Click here</a></i></small>
 </form>
 
@@ -24,8 +24,7 @@
         $run_customer = mysqli_query($con,$select_customer);    
         $get_ip = getRealIpUser();   
         $check_customer = mysqli_num_rows($run_customer);          
-
-
+        
 
         if($check_customer==0){    
             

@@ -17,7 +17,37 @@
 
 
     <!-- view details start -->
-    <div class="row row-cols-1 row-cols-md-5 g-4 fw-bolder text-light">
+    <div class="row row-cols-1 row-cols-md-4 g-4 fw-bolder text-light">
+        <div class="col ">
+          <div class="card border-primary h-100" style="background-color: rgb(80, 115, 212);">
+            <div class="row" >
+                <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-globe ps-5"></i></div>
+                <div class="col-10 text-end p-3">
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_country; ?></p>
+                    <p class="pe-5">Country</p>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light text-primary">
+                <h5>View Details</i></h5>
+                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="card h-100" style="background-color: rgb(203, 131, 231);">
+            <div class="row" >
+                <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-list ps-5"> </i></div>
+                <div class="col-10 text-end p-3">
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_category; ?></p>
+                    <p class="pe-5">category</p>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light text-success">
+                <h5 style="color: rgb(203, 131, 231);">View Details</i></h5>
+                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+            </div>
+          </div>
+        </div>
         <div class="col ">
           <div class="card border-primary h-100" style="background-color: rgb(80, 115, 212);">
             <div class="row" >
@@ -28,36 +58,6 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-primary">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col ">
-          <div class="card border-success h-100" style="background-color: rgb(51, 177, 82);">
-            <div class="row" >
-                <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-list ps-5"> </i></div>
-                <div class="col-10 text-end p-3">
-                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_category; ?></p>
-                    <p class="pe-5">category</p>
-                </div>
-            </div>
-            <div class="card-footer d-flex justify-content-between bg-light text-success">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col ">
-          <div class="card border-warning h-100" style="background-color: rgb(247, 183, 47);">
-            <div class="row" >
-                <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-users ps-5"></i></div>
-                <div class="col-10 text-end p-3">
-                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_customers; ?></p>
-                    <p class="pe-5">Customer</p>
-                </div>
-            </div>
-            <div class="card-footer d-flex justify-content-between bg-light text-warning">
                 <h5>View Details</i></h5>
                 <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
             </div>
@@ -88,6 +88,36 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-danger">
+                <h5>View Details</i></h5>
+                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="card border-warning h-100" style="background-color: rgb(247, 183, 47);">
+            <div class="row" >
+                <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-users ps-5"></i></div>
+                <div class="col-10 text-end p-3">
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_customers; ?></p>
+                    <p class="pe-5"> Total User</p>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light text-warning">
+                <h5>View Details</i></h5>
+                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="card border-success h-100" style="background-color: rgb(51, 177, 82);">
+            <div class="row" >
+                <div class="col-2 p-3" style="font-size: 5rem;"><i class="fa-solid fa-crown ps-5"></i></div>
+                <div class="col-10 text-end p-3">
+                    <p class="pe-5" style="font-size: 3rem;"><?php echo $count_premium; ?></p>
+                    <p class="pe-5"> Premium User</p>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light text-success">
                 <h5>View Details</i></h5>
                 <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
             </div>

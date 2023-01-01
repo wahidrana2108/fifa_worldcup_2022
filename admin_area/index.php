@@ -13,6 +13,10 @@
         $admin_id = $row_admin['admin_id'];
         $admin_name = $row_admin['admin_name'];
 
+        $get_country = "select * from country";
+        $run_country = mysqli_query($con,$get_country);
+        $count_country = mysqli_num_rows($run_country);
+
         $get_player = "select * from player";
         $run_player = mysqli_query($con,$get_player);
         $count_player = mysqli_num_rows($run_player);
@@ -24,6 +28,11 @@
         $get_customers = "select * from customers";
         $run_customers = mysqli_query($con,$get_customers);
         $count_customers = mysqli_num_rows($run_customers);
+        
+
+        $get_premium = "select * from customers where sub_id='2'";
+        $run_premium = mysqli_query($con,$get_premium);
+        $count_premium = mysqli_num_rows($run_premium);
 
         $get_blogs = "select * from blogs";
         $run_blogs = mysqli_query($con,$get_blogs);
@@ -126,6 +135,9 @@
                 }
                 if(isset($_GET['customer_view'])){
                     include("customer_view.php");
+                }
+                if(isset($_GET['customer_premium'])){
+                    include("customer_premium.php");
                 }
                 if(isset($_GET['customer_delete'])){
                     include("customer_delete.php");

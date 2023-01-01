@@ -26,7 +26,7 @@
                         <h4 class="fw-bolder text-light">Contract Us</h4>
                         <h6 class="text-light">fifa2022@support.com</h6>
                         <h6 class="text-light">+09696000123456</h6>
-                        <h6 class="text-light">Physical Location</h6>
+                        <h6 class="text-light"><a href="https://goo.gl/maps/cQB2UVXVby6rtAWm7" class="text-decoration-none text-light">Physical Location</a></h6>
                         <hr class="text-light">
                         <h4 class="text-light">User Section</h4>
                         <nav class="navbar">

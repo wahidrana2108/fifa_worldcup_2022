@@ -13,12 +13,12 @@
 
     :root {
         --bg: rgb(227, 232, 255);
-        --card-bg: rgb(244, 245, 247);
+        --card-bg: gray;
         --white: #fff;
-        --shadow: rgba(235, 240, 250, 0.731);
-        --text-dark: rgb(5, 29, 49);
-        --badge-text: #343483;
-        --btn-bg: rgb(82, 84, 221);
+        --shadow: rgb(255, 255, 255);
+        --text-dark: white;
+        --badge-text: rgb(255, 255, 255);
+        --btn-bg: rgb(75, 75, 75);
         --scrollbar-bg: rgb(250, 248, 255);
     }
 
@@ -104,7 +104,7 @@
         display: inline-flex;
         width: 3rem;
         height: 3rem;
-        background: var(--card-bg);
+        background: black;
         color: var(--badge-text);
         box-shadow: 0 0 0.2rem 0.1rem var(--card-bg);
         justify-content: center;
@@ -189,9 +189,9 @@
             <a href="#match-group">Match By Group</a>
         </li>
     </div>
-    <h1 class="section-heading">Match By Date</h1>
+    <h1 class="section-heading text-light">Match By Date</h1>
     <div class="matchs" id="match-date"></div>
-    <h1 class="section-heading">Match By Group</h1>
+    <h1 class="section-heading text-light">Match By Group</h1>
     <div class="matchs-by-group" id="match-group"></div>
 </div>
 <div class="scroll-top">

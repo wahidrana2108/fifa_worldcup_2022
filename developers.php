@@ -35,7 +35,7 @@
                         
                             echo "
                             <div class='col'>
-                                <div class='card bg-secondary text-light h-100'>
+                                <div class='card bg-dark text-light h-100'>
                                     <img src='dev_img/$d_img' class='card-img-top p-3' style='border-radius: 50%'>
                                     <div class='card-body'>
                                         <h5 class='card-title text-center fw-bolder'>$d_name</h5>
@@ -80,7 +80,7 @@
                         
                             echo "
                             <div class='col'>
-                                <div class='card bg-secondary text-light h-100'>
+                                <div class='card bg-dark text-light h-100'>
                                     <img src='dev_img/$d_img' class='card-img-top p-3'  style='border-radius: 50%'>
                                     <div class='card-body'>
                                         <h5 class='card-title text-center fw-bolder'>$d_name</h5>

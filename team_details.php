@@ -20,7 +20,7 @@
         <div class="d-flex">
             <div class="col-md-2 me-1">
                 <?php
-                    include("includes/sidebarCon.php");
+                    include("includes/sidebar.php");
                 ?>
 
             </div>

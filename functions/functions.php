@@ -101,15 +101,15 @@ function playerCategory(){
         $count = mysqli_num_rows($run_player);
         if($count==0){
             echo "
-            <div class='sDetails'>
-                <h3 class='text-center'>$cat_title</h3>
+            <div class='sDetails bg-dark'>
+                <h3 class='bg-dark text-center'>$cat_title</h3>
                 <p class='text-center'>No Player Found In This category. </p>
             </div>
             ";
         }
         else{
             echo "
-                <div class='sDetails'>
+                <div class='sDetails bg-dark'>
                     <h3 class='text-center'>$cat_title</h3>
                 </div>
             ";
@@ -132,7 +132,7 @@ function playerCategory(){
             
             echo "
             <div class='col'>
-                <div class='card h-100'>
+                <div class='card bg-dark text-light h-100'>
                     <a href='details.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
                     <div class='card-body'>
                         <h5 class='card-title text-center fw-bolder'>$p_name</h5>

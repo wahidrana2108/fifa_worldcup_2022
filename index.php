@@ -46,15 +46,15 @@
                     </div><br>
                     <div class="d-flex justify-content-between ps-4 pe-4">
                         <div class="home-flag">
-                            <img src="https://world-cup.codsfli.com/flag/QAT.png" alt="Qatar" class="" style="width: 80px;">
-                            <h5 class="text-center pt-2">Qatar</h3>
+                            <img src="https://world-cup.codsfli.com/flag/ARG.png" alt="Qatar" class="" style="width: 80px;">
+                            <h5 class="text-center pt-2">Argentina</h3>
                         </div>
                         <span class="dot d-flex align-items-center justify-content-center" style="font-size: 1.5rem;">3</span>
                         <span class="vs" style="font-size: 2rem;">VS</span>
                         <span class="dot d-flex align-items-center justify-content-center" style="font-size: 1.5rem;">3</span>
                         <div class="away-flag">
-                            <img src="https://world-cup.codsfli.com/flag/ECU.png" alt="Ecuador" class="" style="width: 80px;">
-                            <h5 class="text-center pt-2">Ecuador</h3>
+                            <img src="https://world-cup.codsfli.com/flag/FRA.png" alt="Ecuador" class="" style="width: 80px;">
+                            <h5 class="text-center pt-2">France</h3>
                         </div>
                     </div><br>
 

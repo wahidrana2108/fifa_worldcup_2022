@@ -101,12 +101,11 @@
       $c_contact = $_POST['c_contact'];
       $c_image = $_FILES['c_image']['name'];
       $c_image_tmp = $_FILES['c_image']['tmp_name'];
-      $c_sub = 1;
       $c_ip = getRealIpUser();
 
       move_uploaded_file($c_image_tmp,"customer_images/$c_image");
 
-      $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_contact,customer_image,sub_id,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_contact','$c_image','$c_sub','$c_ip')";
+      $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_contact,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_contact','$c_image','$c_ip')";
       $run_customer = mysqli_query($con,$insert_customer);
       if($insert_customer){
           $_SESSION['customer_email']=$c_email;

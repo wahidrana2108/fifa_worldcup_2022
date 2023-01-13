@@ -131,17 +131,19 @@
 
         try {
 
+            $send_to = $_POST['c_email'];
+
             $mail->isSMTP();                                            
             $mail->Host       = 'smtp.gmail.com';                     
             $mail->SMTPAuth   = true;                                   
             $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
-            $mail->Password   = 'password';                               
+            $mail->Password   = '';                               
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
             $mail->Port       = 465;                                    
           
 
             $mail->setFrom('jacquelinechavezkh@gmail.com', 'Bhoot');
-            $mail->addAddress('wahidrana00000@gmail.com');     
+            $mail->addAddress($send_to);     
           
           
 

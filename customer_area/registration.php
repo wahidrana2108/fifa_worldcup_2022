@@ -149,7 +149,7 @@
 
             $mail->isHTML(true);                                  
             $mail->Subject = 'Here is not the subject';
-            $mail->Body    = 'click the link to activate you account. <a href="http://localhost/fifa_worldcup_2022/customer_area/verification.php?email=' . $email . '&token=' . $token . '"> Click here</a>';
+            $mail->Body    = 'click the link to activate you account. <a href="http://localhost/fifa_worldcup_2022/customer_area/verification.php?email=' . $send_to . '&token=' . $token . '"> Click here</a>';
           
             $mail->send();
             $output =  'Message has been sent';

@@ -31,13 +31,22 @@
             
             $cus_email = $row_customer['customer_email'];
             $cus_pass = $row_customer['customer_pass'];
+            $verified = $row_customer['confirmation'];
 
             $get_ip = getRealIpUser();
 
             if(password_verify($customer_pass, $cus_pass)){
-                $_SESSION['customer_email']=$customer_email;        
-                echo "<script>alert('You are Logged in Successfully!')</script>";          
-                echo "<script>window.open('../index.php','_self')</script>";
+
+                if($verified == 1){
+                    $_SESSION['customer_email']=$customer_email;        
+                    echo "<script>alert('You are Logged in Successfully!')</script>";          
+                    echo "<script>window.open('../index.php','_self')</script>";
+                }
+                else{
+                    echo "<script>alert('Verify your email first!')</script>";          
+                    echo "<script>window.open('login.php','_self')</script>";
+                }
+               
             }
             else{
                 echo "<script>alert('Your email or password is wrong!')</script>";      

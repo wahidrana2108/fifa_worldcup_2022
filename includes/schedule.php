@@ -13,7 +13,7 @@
 
     :root {
         --bg: rgb(227, 232, 255);
-        --card-bg: gray;
+        --card-bg: rgb(25, 25, 25);
         --white: #fff;
         --shadow: rgb(255, 255, 255);
         --text-dark: white;
@@ -104,7 +104,7 @@
         display: inline-flex;
         width: 3rem;
         height: 3rem;
-        background: black;
+        background: rgb(110, 110, 110);
         color: var(--badge-text);
         box-shadow: 0 0 0.2rem 0.1rem var(--card-bg);
         justify-content: center;

@@ -51,14 +51,15 @@ $active='My Account';
             $con_new_password = $_POST['con_new_pass'];
     
     
-            if($customer_pass == $old_password){
+            if(password_verify($old_password, $customer_pass)){
                 if($new_password == $con_new_password){
-                    if($customer_pass == $new_password){
+                    if(password_verify($new_password, $customer_pass)){
                         echo "<script>window.open('my_account.php','self')</script>";
                         echo"<script>alert('Password already in use. Choose a different one!')</script>";
                     }
                     else{
-                        $update_password = "update customers set customer_pass='$new_password' where customer_id='$customer_id'";
+                        $new_password_hash = password_hash($new_password, PASSWORD_DEFAULT);
+                        $update_password = "update customers set customer_pass='$new_password_hash' where customer_id='$customer_id'";
                         $update_pass = mysqli_query($con,$update_password);
                         if($update_pass){
                             echo "<script>window.open('my_account.php','self')</script>";
@@ -82,5 +83,7 @@ $active='My Account';
 ?>
 
 <!-- update password end -->
+
+
 
 

@@ -142,7 +142,7 @@
             $mail->Port       = 465;                                    
           
 
-            $mail->setFrom('jacquelinechavezkh@gmail.com', 'Bhoot');
+            $mail->setFrom('jacquelinechavezkh@gmail.com', 'Email Confirmation');
             $mail->addAddress($send_to);     
           
           

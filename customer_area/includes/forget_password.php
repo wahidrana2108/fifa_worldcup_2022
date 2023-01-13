@@ -40,13 +40,14 @@
         $get_ip = getRealIpUser();
 
         if($n_pass==$c_n_pass){
+            $c_pass_hash =  password_hash($n_pass, PASSWORD_DEFAULT);
             if($check_customer==0){
                 echo "<script>alert('No User Found!')</script>"; 
                 echo "<script>window.open('customer_area/forget_password.php','_self')</script>"; 
             }
             else{
 
-                $update_password = "update customers set customer_pass='$n_pass' where customer_id='$customer_id'";
+                $update_password = "update customers set customer_pass='$c_pass_hash' where customer_id='$customer_id'";
                 $update_pass = mysqli_query($con,$update_password);
                 if($update_pass){
                     echo"<script>alert('Password Updated Successfully!')</script>";

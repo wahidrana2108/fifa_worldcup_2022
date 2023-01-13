@@ -20,23 +20,29 @@
     if(isset($_POST['login'])){   
         $customer_email = $_POST['c_email'];  
         $customer_pass = $_POST['c_pass'];   
-        $select_customer = "select * from customers where customer_email='$customer_email' AND customer_pass='$customer_pass'";    
-        $run_customer = mysqli_query($con,$select_customer);    
-        $get_ip = getRealIpUser();   
-        $check_customer = mysqli_num_rows($run_customer);          
-        
+        $select_customer = "select * from customers where customer_email='$customer_email'";
+        $run_customer = mysqli_query($con,$select_customer);
+        $count_customer = mysqli_num_rows($run_customer);
 
-        if($check_customer==0){    
+
+        if($count_customer == 1){
+
+            $row_customer = mysqli_fetch_array($run_customer);
             
-            echo "<script>alert('Your email or password is wrong!')</script>";      
-            exit();   
-        }
-        
-        else{
-            $_SESSION['customer_email']=$customer_email;        
-            echo "<script>alert('You are Logged in Successfully!')</script>";          
-            echo "<script>window.open('../index.php','_self')</script>";
-           
-        }  
+            $cus_email = $row_customer['customer_email'];
+            $cus_pass = $row_customer['customer_pass'];
+
+            $get_ip = getRealIpUser();
+
+            if(password_verify($customer_pass, $cus_pass)){
+                $_SESSION['customer_email']=$customer_email;        
+                echo "<script>alert('You are Logged in Successfully!')</script>";          
+                echo "<script>window.open('../index.php','_self')</script>";
+            }
+            else{
+                echo "<script>alert('Your email or password is wrong!')</script>";      
+                exit();   
+            }
+        } 
     }
 ?>

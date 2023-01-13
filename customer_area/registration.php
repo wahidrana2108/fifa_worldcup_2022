@@ -93,29 +93,73 @@
 
 
 <?php
-  if(isset($_POST['register'])){
-      $c_name = $_POST['c_name'];
-      $c_email = $_POST['c_email'];
-      $c_pass = $_POST['c_pass'];
-      $c_country = $_POST['c_country'];
-      $c_contact = $_POST['c_contact'];
-      $c_image = $_FILES['c_image']['name'];
-      $c_image_tmp = $_FILES['c_image']['tmp_name'];
-      $c_ip = getRealIpUser();
 
-      move_uploaded_file($c_image_tmp,"customer_images/$c_image");
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
 
-      $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_contact,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_contact','$c_image','$c_ip')";
-      $run_customer = mysqli_query($con,$insert_customer);
-      if($insert_customer){
-          $_SESSION['customer_email']=$c_email;
-          echo "<script>alert('You have been Registered successfully!')</script>";
-          echo "<script>window.open('../index.php','_self')</script>";
-      }
-      else{
-          $_SESSION['customer_email']=$c_email;
-          echo "<script>alert('You have been Registered successfully!')</script>";
-          echo "<script>window.open('../index.php','_self')</script>";
-      }
-  }
+    require 'vendor/autoload.php';
+
+    $mail = new PHPMailer(true);
+
+
+    if(isset($_POST['register'])){
+        $c_name = $_POST['c_name'];
+        $c_email = $_POST['c_email'];
+        $c_pass = $_POST['c_pass'];
+        $c_pass_hash =  password_hash($c_pass, PASSWORD_DEFAULT);
+        $c_country = $_POST['c_country'];
+        $c_contact = $_POST['c_contact'];
+        $c_image = $_FILES['c_image']['name'];
+        $c_image_tmp = $_FILES['c_image']['tmp_name'];
+        $c_sub = 1;
+        $c_ip = getRealIpUser();
+
+        move_uploaded_file($c_image_tmp,"customer_images/$c_image");
+
+
+        function getToken($len=32){
+            return substr(md5(openssl_random_pseudo_bytes(20)), -$len);
+        }
+        $token = getToken(10);
+
+
+
+        $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_contact,customer_image,token,customer_ip) values ('$c_name','$c_email','$c_pass_hash','$c_country','$c_contact','$c_image','$token','$c_ip')";
+        $run_customer = mysqli_query($con,$insert_customer);
+
+
+        try {
+
+            $mail->isSMTP();                                            
+            $mail->Host       = 'smtp.gmail.com';                     
+            $mail->SMTPAuth   = true;                                   
+            $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
+            $mail->Password   = 'password';                               
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+            $mail->Port       = 465;                                    
+          
+
+            $mail->setFrom('jacquelinechavezkh@gmail.com', 'Bhoot');
+            $mail->addAddress('wahidrana00000@gmail.com');     
+          
+          
+
+            $mail->isHTML(true);                                  
+            $mail->Subject = 'Here is not the subject';
+            $mail->Body    = 'click the link to activate you account. <a href="http://localhost/fifa_worldcup_2022/customer_area/verification.php?email=' . $email . '&token=' . $token . '"> Click here</a>';
+          
+            $mail->send();
+            $output =  'Message has been sent';
+        } 
+        catch (Exception $e) {
+            $output =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+
+
+        if($insert_customer){
+            echo "<script>alert('Confirmation link sent to your email. Confirm email to login!')</script>";
+            echo "<script>window.location.href='login.php'</script>";
+        }
+    }
 ?>

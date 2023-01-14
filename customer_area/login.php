@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-md-9 m-auto">
-            <div class="card p-4 ">
+            <div class="card bg-dark text-light">
                 <?php
                     include("includes/login.php");
                 ?>

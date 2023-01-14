@@ -20,69 +20,72 @@
         </div>
         
         <div class='col-md-9 m-auto'>
-            <div class='card p-4 '>
-                <h1 class='text-center'>Register a new account</h1>
-                <form action='registration.php' method='post' enctype='multipart/form-data'>
+            <div class='card border-dark bg-dark text-light'>
+                <h1 class='card-header text-center' style='background-color: rgb(48, 48, 48);'>Register a new account</h1>
+                <div class='card-body text-start bg-dark'>
+                    <form action='registration.php' method='post' enctype='multipart/form-data'>
 
-                    <div class='form-group'>
+                        <div class='form-group'>
 
-                        <label>Full Name</label>
+                            <label>Full Name</label>
 
-                        <input type='text' class='form-control' name='c_name' required>
+                            <input type='text' class='form-control' name='c_name' required>
 
-                    </div>
+                        </div>
 
-                    <div class='form-group'>
+                        <div class='form-group'>
 
-                        <label>Email Address</label>
+                            <label>Email Address</label>
 
-                        <input type='email' class='form-control' name='c_email' required>
+                            <input type='email' class='form-control' name='c_email' required>
 
-                    </div>
+                        </div>
 
-                    <div class='form-group'>
+                        <div class='form-group'>
 
-                        <label>Choose Password</label>
+                            <label>Choose Password</label>
 
-                        <input type='password' class='form-control' name='c_pass' required>
+                            <input type='password' class='form-control' name='c_pass' required>
 
-                    </div>
-
-
-                    <div class='form-group'>
-
-                        <label>Select Country</label>
-
-                        <input type='text' class='form-control' name='c_country' required>
-
-                    </div>
-
-                    
-                    <div class='form-group'>
-
-                        <label>Your Contract</label>
-
-                        <input type='number' class='form-control' name='c_contact' required>
-
-                    </div>
-
-                    <div class='form-group pt-2'>
-
-                        <label>Your Recent Photo</label>
-
-                        <input type='file' class='form-control' name='c_image' required>
-
-                    </div>
+                        </div>
 
 
-                    <div class='text-center mt-2'>
+                        <div class='form-group'>
 
-                        <button type='submit' name='register' class='btn btn-primary'>Register</button>
+                            <label>Select Country</label>
 
-                    </div>
-                    <small class="fw-bolder"><i>Already an account? <a href="login.php">Click here</a></i></small>
+                            <input type='text' class='form-control' name='c_country' required>
 
-                </form>
+                        </div>
+
+                        
+                        <div class='form-group'>
+
+                            <label>Your Contract</label>
+
+                            <input type='number' class='form-control' name='c_contact' required>
+
+                        </div>
+
+                        <div class='form-group pt-2'>
+
+                            <label>Your Recent Photo</label>
+
+                            <input type='file' class='form-control' name='c_image' required>
+
+                        </div>
+
+
+                        <div class='text-center mt-2'>
+
+                            <button type='submit' name='register' class='btn btn-primary'>Register</button>
+
+                        </div>
+                        <small class="fw-bolder"><i>Already an account? <a href="login.php">Click here</a></i></small>
+
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>

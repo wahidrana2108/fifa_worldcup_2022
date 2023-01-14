@@ -1,27 +1,29 @@
-<h1 class="text-center">Recover Password</h1>
-<form action="forget_password.php" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" class="form-control" name="c_email" required>
-    </div>
-    <div class="form-group">
-        <label>Contact No</label>
-        <input type="text" class="form-control" name="c_contact" required>
-    </div>
-    <div class="form-group">
-        <label>Enter New Password</label>
-        <input type="password" class="form-control" name="n_password" required>
-    </div>
-    <div class="form-group">
-        <label>Confirm New Password</label>
-        <input type="password" class="form-control" name="c_n_password" required>
-    </div>
-    <div class="text-center mt-2">
-        <button type="submit" name="update_pass" value="login" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i> Submit</button>
-    </div>
-    <small class="fw-bolder"><i>Back to Login <a href="login.php">Click here</a></i></small><br>
-    <small class="fw-bolder"><i>Don't have an account? <a href="registration.php">Click here</a></i></small>
-</form>
+<h1 class='card-header text-center' style='background-color: rgb(48, 48, 48);'>Recover Password</h1>
+<div class='card-body text-start bg-dark'>
+    <form action="forget_password.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" class="form-control" name="c_email" required>
+        </div>
+        <div class="form-group">
+            <label>Contact No</label>
+            <input type="text" class="form-control" name="c_contact" required>
+        </div>
+        <div class="form-group">
+            <label>Enter New Password</label>
+            <input type="password" class="form-control" name="n_password" required>
+        </div>
+        <div class="form-group">
+            <label>Confirm New Password</label>
+            <input type="password" class="form-control" name="c_n_password" required>
+        </div>
+        <div class="text-center mt-2">
+            <button type="submit" name="update_pass" value="login" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i> Submit</button>
+        </div>
+        <small class="fw-bolder"><i>Back to Login <a href="login.php">Click here</a></i></small><br>
+        <small class="fw-bolder"><i>Don't have an account? <a href="registration.php">Click here</a></i></small>
+    </form>
+</div>
 
 
 <?php 

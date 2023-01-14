@@ -9,12 +9,12 @@
         <input type="text" class="form-control" name="c_contact" required>
     </div>
     <div class="form-group">
-        <label>Enter Password</label>
-        <input type="password" class="form-control" name="n_pass" required>
+        <label>Enter New Password</label>
+        <input type="password" class="form-control" name="n_password" required>
     </div>
     <div class="form-group">
-        <label>Confirm Password</label>
-        <input type="password" class="form-control" name="c_n_pass" required>
+        <label>Confirm New Password</label>
+        <input type="password" class="form-control" name="c_n_password" required>
     </div>
     <div class="text-center mt-2">
         <button type="submit" name="update_pass" value="login" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i> Submit</button>
@@ -25,11 +25,31 @@
 
 
 <?php 
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php';
+
+    $mail = new PHPMailer(true);
+
+
+
     if(isset($_POST['update_pass'])){   
         $c_email = $_POST['c_email'];  
-        $c_contact = $_POST['c_contact'];  
-        $n_pass = $_POST['n_pass'];   
-        $c_n_pass = $_POST['c_n_pass']; 
+        $c_contact = $_POST['c_contact'];
+        $new_pass = $_POST['n_password'];
+        $new_pass2 = $_POST['c_n_password'];
+ 
+        
+
+
+        function getToken($len=32){
+            return substr(md5(openssl_random_pseudo_bytes(20)), -$len);
+        }
+        $token = getToken(10);
+
           
         $select_customer = "select * from customers where customer_email='$c_email' AND customer_contact='$c_contact'";    
         $run_customer = mysqli_query($con,$select_customer);
@@ -39,25 +59,58 @@
 
         $get_ip = getRealIpUser();
 
-        if($n_pass==$c_n_pass){
-            $c_pass_hash =  password_hash($n_pass, PASSWORD_DEFAULT);
+        if($new_pass == $new_pass2){
+
+            $password = password_hash($new_pass, PASSWORD_DEFAULT);
+
             if($check_customer==0){
                 echo "<script>alert('No User Found!')</script>"; 
-                echo "<script>window.open('customer_area/forget_password.php','_self')</script>"; 
+                echo "<script>window.open('forget_password.php','_self')</script>"; 
             }
             else{
 
-                $update_password = "update customers set customer_pass='$c_pass_hash' where customer_id='$customer_id'";
-                $update_pass = mysqli_query($con,$update_password);
-                if($update_pass){
-                    echo"<script>alert('Password Updated Successfully!')</script>";
-                    echo "<script>window.open('customer_area/login.php','self')</script>";
+                $update_token = "update customers set token='$token' where customer_id='$customer_id'";
+                $run_token = mysqli_query($con,$update_token);
+
+                try {
+
+                    $send_to = $_POST['c_email'];
+        
+                    $mail->isSMTP();                                            
+                    $mail->Host       = 'smtp.gmail.com';                     
+                    $mail->SMTPAuth   = true;                                   
+                    $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
+                    $mail->Password   = 'wipzjygbsrdyxzki';                               
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+                    $mail->Port       = 465;                                    
+                  
+        
+                    $mail->setFrom('jacquelinechavezkh@gmail.com', 'Password Reset');
+                    $mail->addAddress($send_to);     
+                  
+                  
+        
+                    $mail->isHTML(true);                                  
+                    $mail->Subject = 'Request for password reset';
+                    $mail->Body = 'click the link to recover your password. <a href="http://localhost/fifa_worldcup_2022/customer_area/update.php?email=' . $send_to . '&token=' . $token . '&hash=' . $password . '"> Click here</a>';
+                  
+                    $mail->send();
+                    $output =  'Message has been sent';
+                } 
+                catch (Exception $e) {
+                    $output =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                 }
+
+
+                if($run_token){
+                    echo "<script>alert('Link for update Password sent to your email!')</script>";
+                    echo "<script>window.location.href='registration.php'</script>";
+                }
+
             }
         }
-        else{;
-            echo "<script>alert('Recheck your password!')</script>";
-            echo "<script>window.open('customer_area/forget_password.php','self')</script>";
+        else{
+            echo "<script>alert('Recheck Password!')</script>";
         }
     }
 ?>

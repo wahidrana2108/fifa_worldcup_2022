@@ -14,6 +14,12 @@
                 unset($token);
             }
         }
+        if(isset($_GET['hash'])){
+            $hash = $_GET['hash'];
+            if($hash == ''){
+                unset($hash);
+            }
+        }
         
         if(!empty($email) && !empty($token)){
             $get_customers = "select * from customers where customer_email='$email'";
@@ -21,10 +27,10 @@
             $row = mysqli_fetch_array($run_customers);
             $count_customers = mysqli_num_rows($run_customers);
             if($count_customers == 1){
-                $update = "update customers set Confirmation=1, token='' where customer_email='$email'";
+                $update = "update customers set Confirmation=1, token='', customer_pass='$hash' where customer_email='$email'";
                 $run_update = mysqli_query($con,$update);
                 if($run_update){
-                    echo "<script>alert('Email address successfully verified!')</script>";
+                    echo "<script>alert('Password updated successfully!')</script>";
                     echo "<script>window.location.href='login.php'</script>";
                 }
             }

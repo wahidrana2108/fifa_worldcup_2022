@@ -85,45 +85,45 @@
                     <tr>
                         <th class="text-center"><img src="https://world-cup.codsfli.com/flag/ARG.png" height="40px"></th>
                         <th class="text-center"></th>
-                        <th class="text-center" ><img src="https://world-cup.codsfli.com/flag/BRA.png" height="40px"></th>
+                        <th class="text-center" ><img src="https://world-cup.codsfli.com/flag/FRA.png" height="40px"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">20</th>
                         <th class="text-center  text-light">Shot</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >10</th>
                     </tr>
                     
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">10</th>
                         <th class="text-center  text-light">Shot on target</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >5</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">54%</th>
                         <th class="text-center  text-light">Possession of the ball</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >46%</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">635</th>
                         <th class="text-center  text-light">Pass</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >532</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">82%</th>
                         <th class="text-center  text-light">Statistics fot correct/incorrect passes</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >76%</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">26</th>
                         <th class="text-center  text-light">Foul</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >19</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">5</th>
                         <th class="text-center  text-light">Yellow card</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >3</th>
                     </tr>
                     <tr class='clickable-row'>
                         <th class="text-center  text-light">0</th>
@@ -131,14 +131,14 @@
                         <th class="text-center  text-light" >0</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">4</th>
                         <th class="text-center  text-light">Offside</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >4</th>
                     </tr>
                     <tr class='clickable-row'>
-                        <th class="text-center  text-light">0</th>
+                        <th class="text-center  text-light">6</th>
                         <th class="text-center  text-light">Corner</th>
-                        <th class="text-center  text-light" >0</th>
+                        <th class="text-center  text-light" >5</th>
                     </tr>
 
                 </tbody>

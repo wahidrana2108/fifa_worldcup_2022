@@ -28,8 +28,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-primary">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?country_view"><h5>View Details</i></h5></a>
+                <a href="index.php?country_view"><h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-success">
-                <h5 style="color: rgb(203, 131, 231);">View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?category_view"><h5 style="color: rgb(203, 131, 231);">View Details</i></h5></a>
+                <a href="index.php?category_view"><h5 style="color: rgb(203, 131, 231);"><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>
@@ -58,8 +58,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-primary">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?player_view"><h5>View Details</i></h5></a>
+                <a href="index.php?player_view"><h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>
@@ -73,8 +73,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-danger">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?blog_view"><h5 style="color: rgb(235, 103, 63);">View Details</i></h5></a>
+                <a href="index.php?blog_view"><h5 style="color: rgb(235, 103, 63);"><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-danger">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?news_view"><h5 style="color: rgb(248, 71, 65);">View Details</i></h5></a>
+                <a href="index.php?news_view"><h5 style="color: rgb(248, 71, 65);"><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>
@@ -103,8 +103,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-warning">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?customer_view"><h5 style="color: rgb(247, 183, 47);">View Details</i></h5></a>
+                <a href="index.php?customer_view"><h5 style="color: rgb(247, 183, 47);"><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>
@@ -118,8 +118,8 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between bg-light text-success">
-                <h5>View Details</i></h5>
-                <h5><i class="fa-sharp fa-solid fa-circle-right"></i></h5>
+                <a class="text-decoration-none" href="index.php?customer_premium"><h5 style="color: rgb(51, 177, 82);">View Details</i></h5></a>
+                <a href="index.php?customer_premium"><h5 style="color: rgb(51, 177, 82);"><i class="fa-sharp fa-solid fa-circle-right"></i></h5></a>
             </div>
           </div>
         </div>

@@ -43,9 +43,17 @@
 
                         <div class='form-group'>
 
-                            <label>Choose Password</label>
+                            <label>Enter Password</label>
 
-                            <input type='password' class='form-control' name='c_pass' required>
+                            <input type='password' class='form-control' name='n_pass' required>
+
+                        </div>
+
+                        <div class='form-group'>
+
+                            <label>Confirm Password</label>
+
+                            <input type='password' class='form-control' name='c_n_pass' required>
 
                         </div>
 
@@ -107,64 +115,83 @@
 
 
     if(isset($_POST['register'])){
+        $c_pass = $_POST['n_pass'];
+        $c_n_pass = $_POST['c_n_pass'];
         $c_name = $_POST['c_name'];
         $c_email = $_POST['c_email'];
-        $c_pass = $_POST['c_pass'];
-        $c_pass_hash =  password_hash($c_pass, PASSWORD_DEFAULT);
         $c_country = $_POST['c_country'];
         $c_contact = $_POST['c_contact'];
         $c_image = $_FILES['c_image']['name'];
         $c_image_tmp = $_FILES['c_image']['tmp_name'];
-        $c_sub = 1;
-        $c_ip = getRealIpUser();
 
-        move_uploaded_file($c_image_tmp,"customer_images/$c_image");
+        $get_customers = "select * from customers where customer_email = '$c_email'";
+        $run_customers = mysqli_query($con,$get_customers);
+        $count_customers = mysqli_num_rows($run_customers);
 
+        if($count_customers > 0){
+            echo "<script>alert('This Email is already exists!')</script>";
+            echo "<script>window.location.href='registration.php'</script>";
 
-        function getToken($len=32){
-            return substr(md5(openssl_random_pseudo_bytes(20)), -$len);
         }
-        $token = getToken(10);
-
-
-
-        $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_contact,customer_image,token,customer_ip) values ('$c_name','$c_email','$c_pass_hash','$c_country','$c_contact','$c_image','$token','$c_ip')";
-        $run_customer = mysqli_query($con,$insert_customer);
-
-
-        try {
-
-            $send_to = $_POST['c_email'];
-
-            $mail->isSMTP();                                            
-            $mail->Host       = 'smtp.gmail.com';                     
-            $mail->SMTPAuth   = true;                                   
-            $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
-            $mail->Password   = 'wipzjygbsrdyxzki';                               
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
-            $mail->Port       = 465;                                    
-          
-
-            $mail->setFrom('jacquelinechavezkh@gmail.com', 'Email Confirmation');
-            $mail->addAddress($send_to);     
-          
-          
-
-            $mail->isHTML(true);                                  
-            $mail->Subject = 'Here is not the subject';
-            $mail->Body    = 'click the link to activate you account. <a href="http://localhost/fifa_worldcup_2022/customer_area/verification.php?email=' . $send_to . '&token=' . $token . '"> Click here</a>';
-          
-            $mail->send();
-            $output =  'Message has been sent';
-        } 
-        catch (Exception $e) {
-            $output =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        }
-
-
-        if($insert_customer){
-            echo "<script>alert('Confirmation link sent to your email. Confirm email to login!')</script>";
-            echo "<script>window.location.href='login.php'</script>";
+        else{
+            if($c_pass == $c_n_pass){
+                $c_pass_hash =  password_hash($c_pass, PASSWORD_DEFAULT);
+    
+                $c_ip = getRealIpUser();
+        
+                move_uploaded_file($c_image_tmp,"customer_images/$c_image");
+        
+        
+                function getToken($len=32){
+                    return substr(md5(openssl_random_pseudo_bytes(20)), -$len);
+                }
+                $token = getToken(10);
+        
+        
+        
+                $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_contact,customer_image,token,customer_ip) values ('$c_name','$c_email','$c_pass_hash','$c_country','$c_contact','$c_image','$token','$c_ip')";
+                $run_customer = mysqli_query($con,$insert_customer);
+        
+        
+                try {
+        
+                    $send_to = $_POST['c_email'];
+        
+                    $mail->isSMTP();                                            
+                    $mail->Host       = 'smtp.gmail.com';                     
+                    $mail->SMTPAuth   = true;                                   
+                    $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
+                    $mail->Password   = 'wipzjygbsrdyxzki';                               
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+                    $mail->Port       = 465;                                    
+                  
+        
+                    $mail->setFrom('jacquelinechavezkh@gmail.com', 'Email Confirmation');
+                    $mail->addAddress($send_to);     
+                  
+                  
+        
+                    $mail->isHTML(true);                                  
+                    $mail->Subject = 'Here is not the subject';
+                    $mail->Body    = 'click the link to activate you account. <a href="http://localhost/fifa_worldcup_2022/customer_area/verification.php?email=' . $send_to . '&token=' . $token . '"> Click here</a>';
+                  
+                    $mail->send();
+                    $output =  'Message has been sent';
+                } 
+                catch (Exception $e) {
+                    $output =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                }
+        
+        
+                if($insert_customer){
+                    echo "<script>alert('Confirmation link sent to your email. Confirm email to login!')</script>";
+                    echo "<script>window.location.href='login.php'</script>";
+                }
+            }
+            else{
+                echo "<script>alert('Recheck Password!')</script>";
+                echo "<script>window.location.href='registration.php'</script>";
+            }
         }
     }
 ?>

@@ -161,7 +161,7 @@
                     $mail->Host       = 'smtp.gmail.com';                     
                     $mail->SMTPAuth   = true;                                   
                     $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
-                    $mail->Password   = 'wipzjygbsrdyxzki';                               
+                    $mail->Password   = 'ukpayhhdiothrlhs';                               
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                     $mail->Port       = 465;                                    
                   
@@ -172,7 +172,7 @@
                   
         
                     $mail->isHTML(true);                                  
-                    $mail->Subject = 'Here is not the subject';
+                    $mail->Subject = 'Account Activation';
                     $mail->Body    = 'click the link to activate you account. <a href="http://localhost/fifa_worldcup_2022/customer_area/verification.php?email=' . $send_to . '&token=' . $token . '"> Click here</a>';
                   
                     $mail->send();

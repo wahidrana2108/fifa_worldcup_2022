@@ -64,7 +64,7 @@
         <div class="d-flex">
 
             <div class="col-md-10">
-                <h4 class='text-center text-light fw-bolder pb-3'>Developers Information</h4>
+                <h4 class='text-center text-light fw-bolder pb-3'>Developer Information</h4>
                 
                 <div class="row row-cols-1 row-cols-md-5 g-4 justify-content-evenly">
                     <?php

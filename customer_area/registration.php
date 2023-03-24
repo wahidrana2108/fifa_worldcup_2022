@@ -161,7 +161,7 @@
                     $mail->Host       = 'smtp.gmail.com';                     
                     $mail->SMTPAuth   = true;                                   
                     $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
-                    $mail->Password   = '';                               
+                    $mail->Password   = 'zdkjoetzibaegiaa';                               
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                     $mail->Port       = 465;                                    
                   

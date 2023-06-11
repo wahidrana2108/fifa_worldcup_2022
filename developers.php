@@ -16,7 +16,7 @@
         </div>
 
 
-        <div class="d-flex align-items-center">
+        <!-- <div class="d-flex align-items-center">
 
             <div class="col-md-10">
                 <h4 class='text-center text-light fw-bolder pb-3'>Supervisor Information</h4>
@@ -46,7 +46,7 @@
                             ";
                         }
                     ?>
-                </div>
+                </div> -->
                 
 
             </div>

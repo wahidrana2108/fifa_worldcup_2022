@@ -97,7 +97,7 @@
                         </li>
                         <li class="nav-item">
                             <form class="d-flex mt-1 ms-md-5" role="search">
-                                <input class="form-control me-2 .col-md-4" type="search" placeholder="Search " aria-label="Search">
+                                <input class="form-control me-2 .col-md-4" type="search" placeholder="Search " aria-label="Search"  name="input" id="input">
                                 <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
                             </form>
                         </li>
@@ -107,6 +107,8 @@
             </div>
         </div>
     </nav>
+    <div id="result" class="text-lite"></div>
+
     <!-- navbar end -->
 
 

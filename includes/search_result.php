@@ -28,7 +28,7 @@
         }
         else{
             echo "
-            <div class='text-light'>No player information found!</div>
+            <div class='text-light'>No player info found!</div>
             ";
         }
     }

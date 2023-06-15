@@ -30,9 +30,8 @@
                 <?php
                     if(isset($_GET['input'])){
                         $input = $_GET['input'];
-                        $get_player = "select * from player where con_id='%$input%'";
-                        $run_player = mysqli_query($con,$get_player);
-                        $row_player = mysqli_fetch_array($run_player);
+                        $get_result = "select * from player where player_name like '%$input%'";
+                        $run_result = mysqli_query($con, $get_result); 
 
                         if(!isset($_GET['cat'])){
                             echo "<h4 class='text-center text-light fw-bolder mb-5'>Search Result for $input</h4>";
@@ -40,21 +39,35 @@
                         else{
                             echo "<h4 class='text-center text-light fw-bolder mb-5'>No search result found for $input</h4>";
                         }
+
+                        echo"
+                        <div class='col-md-12'>
                         
-                    }
+                            <div class='row row-cols-1 row-cols-md-5 g-4'>
+                        ";
+                        while($row_player = mysqli_fetch_array($run_result)){
+                            $p_img = $row_player['player_img'];
+                            $p_id = $row_player['player_id'];
+                            $p_name = $row_player['player_name'];
+                            echo "
+                                <div class='col'>
+                                    <div class='card bg-secondary text-light h-100'>
+                                        <a href='player_profile.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
+                                        <div class='card-body'>
+                                            <h5 class='card-title text-center fw-bolder'>$p_name</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            ";
+                        }
+    
+                        echo "
+                            </div>
+                        </div>
+                        ";  
+                        
+                    }              
                 ?>
-                                 
-                
-                <div class="col-md-12">
-                
-                    <div class="row row-cols-1 row-cols-md-5 g-4">
-                        
-                       <?php include("includes/team_details.php")?>
-
-
-                    </div>
-                </div>
-
                 <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
                     <?php 
                         playerCountryCategory();

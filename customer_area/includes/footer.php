@@ -105,5 +105,30 @@
     </script>
 <!-- own carousel js end -->
 
+
+<!-- AJEX auto suggestions start-->
+<script type="text/javascript">
+            $(document).ready(function() {
+                $("#input").keyup(function(){
+                    var input = $(this).val();
+                    if (input != '') {
+                        $.ajax({
+                            url:"includes/live_search.php",
+                            method:"POST",
+                            data:{input:input},
+
+                            success:function(data){
+                                $("#result").html(data);
+                            }
+                        });
+                    }
+                    else {
+                        $("#result").css("display", "none");
+                    }
+                });
+            });
+        </script>
+<!-- AJEX auto suggestions end-->
+
 </body>
 </html>

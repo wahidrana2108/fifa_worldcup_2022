@@ -31,13 +31,14 @@
                     if(isset($_GET['input'])){
                         $input = $_GET['input'];
                         $get_result = "select * from player where player_name like '%$input%'";
-                        $run_result = mysqli_query($con, $get_result); 
+                        $run_result = mysqli_query($con, $get_result);
+                        $count = mysqli_num_rows($run_result); 
 
-                        if(!isset($_GET['cat'])){
+                        if($count > 0){
                             echo "<h4 class='text-center text-light fw-bolder mb-5'>Search Result for $input</h4>";
                         }
                         else{
-                            echo "<h4 class='text-center text-light fw-bolder mb-5'>No search result found for $input</h4>";
+                            echo "<h4 class='text-center text-light fw-bolder mb-5'>Sorry...No search result found for $input</h4>";
                         }
 
                         echo"
@@ -51,7 +52,7 @@
                             $p_name = $row_player['player_name'];
                             echo "
                                 <div class='col'>
-                                    <div class='card bg-secondary text-light h-100'>
+                                    <div class='card bg-dark text-light h-100'>
                                         <a href='player_profile.php?p_id=$p_id'><img src='admin_area/player_img/$p_img' class='card-img-top p-3'></a>
                                         <div class='card-body'>
                                             <h5 class='card-title text-center fw-bolder'>$p_name</h5>

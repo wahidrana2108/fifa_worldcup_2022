@@ -4,6 +4,14 @@
     include("functions/functions.php");
 ?>
 
+<?php
+    if(isset($_POST['search'])) {
+        $input = $_POST['input'];
+        header("Location: search_result.php?input=$input");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,9 +104,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <form class="d-flex mt-1 ms-md-5" role="search">
+                            <form class="d-flex mt-1 ms-md-5" role="search" method="POST">
                                 <input class=" form-control me-2 .col-md-4" type="search" placeholder="Search " aria-label="Search"  name="input" id="input">
-                                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                                <button class="btn btn-outline-success" name='search' onclick='search' type="submit"><i class="fas fa-search"></i></button>
                             </form>
                             <div class="mt-1 ms-md-5" id="result"></div>
                         </li>

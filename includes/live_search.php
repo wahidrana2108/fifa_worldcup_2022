@@ -20,8 +20,8 @@
                 while($row_id = mysqli_fetch_array($run_id)){
                     $p_id = $row_id['player_id'];
                     echo"
-                        <tr>
-                            <td class='text-light'><a href='player_profile.php?p_id=$p_id'>$name</a></td>
+                        <tr class='text-light'>
+                            <td><a class='link-light link-underline-opacity-0 link-opacity-100-hover' href='player_profile.php?p_id=$p_id'>$name</a></td>
                         </tr>";
                     }
                 
@@ -33,7 +33,7 @@
         }
         else{
             echo "
-            <div class='text-light'>No player inforamtion found!</div>
+            <div class='text-light'>No player information found!</div>
             ";
         }
     }

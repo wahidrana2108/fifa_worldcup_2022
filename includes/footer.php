@@ -116,7 +116,7 @@
                     var input = $(this).val();
                     if (input != '') {
                         $.ajax({
-                            url:"includes/search_result.php",
+                            url:"includes/live_search.php",
                             method:"POST",
                             data:{input:input},
 

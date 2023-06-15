@@ -15,11 +15,16 @@
             ";
             while($row_result = mysqli_fetch_array($run_result)){
                 $name = $row_result['player_name'];
-                echo"
-                     <tr>
-                        <td class='text-light'>$name</td>
-                    </tr>
-                ";
+                $get_id = "select * from player where player_name = '$name'";
+                $run_id = mysqli_query($con, $get_id);
+                while($row_id = mysqli_fetch_array($run_id)){
+                    $p_id = $row_id['player_id'];
+                    echo"
+                        <tr>
+                            <td class='text-light'><a href='player_profile.php?p_id=$p_id'>$name</a></td>
+                        </tr>";
+                    }
+                
             }
             echo"
                 </tbody>

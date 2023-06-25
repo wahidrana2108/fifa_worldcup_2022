@@ -9,9 +9,5 @@ The website incorporates strong security measures to safeguard user and admin cr
 Overall, the FIFA World Cup website offers an engaging and secure experience for visitors, providing them with a comprehensive platform to explore tournament details, player information, news articles, and blogs, while maintaining the privacy and security of user and admin data.
 
 
-<<<<<<< HEAD
-# Project screenshots
-=======
 # Project Screenshots
 ![image](https://github.com/wahidrana2108/fifa_worldcup_2022/assets/108891888/793cfa4f-930d-47d7-a33a-6d6cf083568b)
->>>>>>> 4830edd2705fe457cc301525f69be8cc9d0b14d4

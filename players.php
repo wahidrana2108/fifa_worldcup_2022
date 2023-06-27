@@ -29,12 +29,12 @@
                 <?php
                     if(!isset($_GET['p_cat'])){
                         if(!isset($_GET['cat'])){
-                            echo "<h4 class='text-center text-light fw-bolder pb-3'>Player Information</h4>";
+                            echo "<h4 class='text-center bg-dark text-light fw-bolder pt-2 pb-2 rounded-2'>Player Information</h4>";
                         }
                     }
                 ?>
                 
-                <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
                     <?php
                         include("includes/player.php");
                     ?>

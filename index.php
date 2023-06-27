@@ -2,7 +2,7 @@
     $active='Home';
     include("includes/header.php");
 ?>
-    <!-- carousel end -->
+    <!-- carousel start -->
     <div id="banner" class="carousel slide carousel-fade" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

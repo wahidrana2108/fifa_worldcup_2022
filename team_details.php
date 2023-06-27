@@ -36,7 +36,7 @@
                         $con_title = $row_con['con_name'];
 
                         if(!isset($_GET['cat'])){
-                            echo "<h4 class='text-center text-light fw-bolder mb-5'>All players from $con_title</h4>";
+                            echo "<h4 class='text-center bg-dark text-light fw-bolder pt-2 pb-2 rounded-2 mb-3'>All players from $con_title</h4>";
                         }
                         else{
                             echo "<h4 class='text-center text-light fw-bolder mb-5'>category from $con_title</h4>";

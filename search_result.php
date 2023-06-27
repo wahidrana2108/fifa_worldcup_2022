@@ -35,10 +35,10 @@
                         $count = mysqli_num_rows($run_result); 
 
                         if($count > 0){
-                            echo "<h4 class='text-center text-light fw-bolder mb-5'>Search Result for $input</h4>";
+                            echo "<h4 class='text-center bg-dark text-light fw-bolder mb-5 pt-2 pb-2 rounded-2'>Search Result for $input</h4>";
                         }
                         else{
-                            echo "<h4 class='text-center text-light fw-bolder mb-5'>Sorry...No search result found for $input</h4>";
+                            echo "<h4 class='text-center bg-dark text-light fw-bolder mb-5 pt-2 pb-2 rounded-2'>Sorry...No search result found for $input</h4>";
                         }
 
                         echo"

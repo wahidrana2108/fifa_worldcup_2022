@@ -113,7 +113,7 @@
                     var input = $(this).val();
                     if (input != '') {
                         $.ajax({
-                            url:"includes/live_search.php",
+                            url:"../includes/live_search.php",
                             method:"POST",
                             data:{input:input},
 
@@ -128,7 +128,7 @@
                 });
             });
         </script>
-<!-- AJEX auto suggestions end-->   
+<!-- AJEX auto suggestions end-->
 
 </body>
 </html>

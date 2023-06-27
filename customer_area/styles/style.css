@@ -30,3 +30,13 @@ body{
     border-radius: 50%;
     display: inline-block;
   }
+
+.underline {
+    text-decoration: none;
+}
+
+.up{
+    position: relative;
+    z-index: 9999;
+
+}

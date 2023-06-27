@@ -108,7 +108,7 @@
                                 <input class=" form-control me-2 .col-md-4" type="search" placeholder="Search " aria-label="Search"  name="input" id="input">
                                 <button class="btn btn-outline-success" name='search' onclick='search' type="submit"><i class="fas fa-search"></i></button>
                             </form>
-                            <div class="mt-1 ms-md-5 z-3 position-absolute p-0" id="result"></div>
+                            <div class="mt-1 ms-md-5" id="result"></div>
                         </li>
                 </ul>
             </div>

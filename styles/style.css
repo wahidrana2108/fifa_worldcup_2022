@@ -35,3 +35,9 @@ body{
 .underline {
     text-decoration: none;
 }
+
+.up{
+    position: relative;
+    z-index: 9999;
+
+}

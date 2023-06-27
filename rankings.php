@@ -26,11 +26,11 @@
             <div class="col-md-10">
                 <?php
                     if(!isset($_GET['cat'])){
-                        echo "<h4 class='text-center text-light fw-bolder'>Ranking Information</h4>";
+                        echo "<h4 class='text-center bg-dark text-light fw-bolder pt-2 pb-2 rounded-2'>Ranking Information</h4>";
                     }
                 ?>
                 
-                <div class="row row-cols-1 row-cols-md-5 g-4 mt-3">
+                <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
                     <?php
                         include("includes/rankings.php");
                     ?>

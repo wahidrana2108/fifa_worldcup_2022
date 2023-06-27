@@ -10,8 +10,9 @@
         if(mysqli_num_rows($run_result)>0){
             echo"
                     
-            <table class='table table-striped-columns'>
-                <tbody>
+            <div class='card bg-dark'>
+                <div class='card-body'>
+                    <ul class='nav flex-column'>
             ";
             while($row_result = mysqli_fetch_array($run_result)){
                 $name = $row_result['player_name'];
@@ -19,16 +20,19 @@
                 $run_id = mysqli_query($con, $get_id);
                 while($row_id = mysqli_fetch_array($run_id)){
                     $p_id = $row_id['player_id'];
+                    $p_img = $row_id['player_img'];
                     echo"
-                        <tr class='text-light'>
-                            <td><a class='link-light link-underline-opacity-0 link-opacity-100-hover' href='player_profile.php?p_id=$p_id'>$name</a></td>
-                        </tr>";
+                    <li class='nav-item'>
+                    <a class='link-light underline' href='player_profile.php?p_id=$p_id'>$name</a></li>
+                    <br>   
+                    ";
                     }
                 
             }
             echo"
-                </tbody>
-            </table>
+                    </ul>
+                </div>
+            </div>
             ";
         }
         else{
@@ -38,3 +42,8 @@
         }
     }
 ?>
+
+
+
+
+                
